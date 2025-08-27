@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teste de Localização</title>
+  <script src="locales.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .test-section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .language-switcher {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .lang-btn {
+      background: none;
+      border: 2px solid #007bff;
+      border-radius: 6px;
+      padding: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 16px;
+    }
+    .lang-btn:hover {
+      background: #007bff;
+      color: white;
+    }
+    .lang-btn.active {
+      background: #28a745;
+      border-color: #28a745;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Teste do Sistema de Localização</h1>
+  
+  <div class="test-section">
+    <h2 data-i18n="aboutTitle">Sobre o Jogo</h2>
+    <p data-i18n="aboutText">Texto em português sobre o jogo...</p>
+    <p data-i18n="aboutAvailability">Disponibilidade...</p>
+  </div>
+  
+  <div class="test-section">
+    <h2 data-i18n="featuresTitle">Recursos</h2>
+    <ul>
+      <li data-i18n="physicsTitle">Física de Partículas</li>
+      <li data-i18n="biomesTitle">Biomas e Níveis</li>
+      <li data-i18n="explosivesTitle">Brinquedos Explosivos</li>
+    </ul>
+  </div>
+  
+  <div class="test-section">
+    <h2>Formulário de Teste</h2>
+    <form>
+      <label for="email" data-i18n="emailLabel">Seu e-mail:</label><br>
+      <input type="email" id="email" data-i18n-placeholder="emailPlaceholder" placeholder="seu@email.com"><br><br>
+      <button type="button" data-i18n="subscribeBtn">Quero ser avisado</button>
+    </form>
+  </div>
+  
+  <div class="test-section">
+    <h2>Teste de Badge Wishlist</h2>
+    <div style="position: relative; display: inline-block;">
+      <span style="background: #ffc84c; padding: 10px; border-radius: 8px;">Steam</span>
+      <span class="soon" style="position: absolute; top: -8px; right: -8px; background: #ffc84c; color: #3a2402; font-weight: 800; border: 2px solid #7a540d; border-radius: 8px; padding: 2px 6px; font-size: 11px; letter-spacing: .2px;">Wishlist</span>
+    </div>
+  </div>
+  
+  <script>
+    // Teste do sistema
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('Sistema de localização carregado!');
+      console.log('Idioma atual:', document.documentElement.lang);
+      console.log('Traduções disponíveis:', Object.keys(locales));
+    });
+  </script>
+</body>
+</html>

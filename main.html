@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="locales.js"></script>
   <style>
     :root{
       --bg: #0b1736;
@@ -53,7 +54,7 @@
       filter:drop-shadow(0 2px 0 #08102a) saturate(1.05) contrast(1.02);
     }
     .store-badges .soon::after{
-      content:"Wishlist"; position:absolute; top:-8px; right:-8px;
+      content:var(--wishlist-text, "Wishlist"); position:absolute; top:-8px; right:-8px;
       background:var(--accent); color:#3a2402; font-weight:800;
       border:2px solid #7a540d; border-radius:8px; padding:2px 6px;
       font-size:11px; letter-spacing:.2px;
@@ -121,36 +122,36 @@
 </head>
 <body>
   <header>
-    <div class="container nav" role="navigation" aria-label="Topo">
+    <div class="container nav" role="navigation" data-i18n-aria-label="navigation" aria-label="Topo">
       <a class="brand" href="#home">
-        <img class="brand-logo" src="assets/logo-128.png" alt="Logo em pixel do Grain" />
-        <span class="brand-title">Grain Pixel</span>
+        <img class="brand-logo" src="assets/logo-128.png" data-i18n-alt="brandLogoAlt" alt="Logo em pixel do Grain" />
+        <span class="brand-title" data-i18n="brandTitle">Grain Pixel</span>
       </a>
-      <div class="store-badges" aria-label="Lojas">
-        <a href="#download" aria-label="Baixar na App Store">
-          <img src="assets/app-store.png" alt="Disponível na App Store" width="180" height="54" loading="eager">
+      <div class="store-badges" data-i18n-aria-label="stores" aria-label="Lojas">
+        <a href="#download" data-i18n-aria-label="appStoreAlt" aria-label="Baixar na App Store">
+          <img src="assets/app-store.png" data-i18n-alt="appStoreAlt" alt="Disponível na App Store" width="180" height="54" loading="eager">
         </a>
-        <a href="#download" aria-label="Baixar no Google Play">
-          <img src="assets/google-play.png" alt="Disponível no Google Play" width="180" height="54" loading="eager">
+        <a href="#download" data-i18n-aria-label="googlePlayAlt" aria-label="Baixar no Google Play">
+          <img src="assets/google-play.png" data-i18n-alt="googlePlayAlt" alt="Disponível no Google Play" width="180" height="54" loading="eager">
         </a>
-        <a href="#steam" class="soon" aria-label="Wishlist no Steam">
-          <img src="assets/steam.png" alt="Wishlist no Steam" width="180" height="54" loading="eager">
+        <a href="#steam" class="soon" data-i18n-aria-label="steamAlt" aria-label="Wishlist no Steam">
+          <img src="assets/steam.png" data-i18n-alt="steamAlt" alt="Wishlist no Steam" width="180" height="54" loading="eager">
         </a>
       </div>
     </div>
   </header>
 
-  <section id="home" class="hero" aria-label="Herói">
+  <section id="home" class="hero" data-i18n-aria-label="hero" aria-label="Herói">
     <video autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-label="Gameplay do Grain em loop">
       <source src="assets/hero.mp4" type="video/mp4" />
     </video>
     <div class="overlay">
       <div class="container">
-        <h1>Fun with Particles</h1>
-        <p class="tagline">Um sandbox de partículas em pixel art para você criar, destruir e experimentar mundos vivos.</p>
+        <h1 data-i18n="heroTitle">Fun with Particles</h1>
+        <p class="tagline" data-i18n="tagline">Um sandbox de partículas em pixel art para você criar, destruir e experimentar mundos vivos.</p>
         <div class="cta-row">
-          <a class="btn" href="#download">Baixar</a>
-          <a class="btn secondary" href="#trailer">Assistir Trailer</a>
+          <a class="btn" href="#download" data-i18n="downloadBtn">Baixar</a>
+          <a class="btn secondary" href="#trailer" data-i18n="watchTrailerBtn">Assistir Trailer</a>
         </div>
       </div>
     </div>
@@ -159,18 +160,18 @@
   <section id="sobre">
     <div class="container two-col">
       <div class="card">
-        <h2 class="section-title">Sobre o Jogo</h2>
-        <p>Grain Pixel combina física divertida com estética retrô. Misture <strong>fogo</strong>, <strong>água</strong>, <strong>areia</strong>, <strong>gelo</strong>, <strong>vapor</strong> e dezenas de elementos para ver o mundo reagir em tempo real. Crie cenários, acenda dinamites, congele cascatas, e descubra interações emergentes. Simples de jogar, profundo para dominar.</p>
-        <p style="color:var(--muted)">Disponível para <strong>iOS</strong> e com versão <strong>PC</strong> em desenvolvimento.</p>
+        <h2 class="section-title" data-i18n="aboutTitle">Sobre o Jogo</h2>
+        <p data-i18n="aboutText">Grain Pixel combina física divertida com estética retrô. Misture <strong>fogo</strong>, <strong>água</strong>, <strong>areia</strong>, <strong>gelo</strong>, <strong>vapor</strong> e dezenas de elementos para ver o mundo reagir em tempo real. Crie cenários, acenda dinamites, congele cascatas, e descubra interações emergentes. Simples de jogar, profundo para dominar.</p>
+        <p style="color:var(--muted)" data-i18n="aboutAvailability">Disponível para <strong>iOS</strong> e com versão <strong>PC</strong> em desenvolvimento.</p>
       </div>
       <div class="card">
-        <div class="gallery" aria-label="Galeria de imagens">
-          <a href="assets/shot1.jpg" class="glink"><img src="assets/shot1.jpg" alt="Screenshot 1: deserto com pirâmide"/></a>
-          <a href="assets/shot2.jpg" class="glink"><img src="assets/shot2.jpg" alt="Screenshot 2: floresta pegando fogo"/></a>
-          <a href="assets/shot3.jpg" class="glink"><img src="assets/shot3.jpg" alt="Screenshot 3: noite com lua"/></a>
-          <a href="assets/shot4.jpg" class="glink"><img src="assets/shot4.jpg" alt="Screenshot 4: menu de elementos"/></a>
-          <a href="assets/shot5.jpg" class="glink"><img src="assets/shot5.jpg" alt="Screenshot 5: bioma de neve"/></a>
-          <a href="assets/shot6.jpg" class="glink"><img src="assets/shot6.jpg" alt="Screenshot 6: seleção de níveis"/></a>
+        <div class="gallery" data-i18n-aria-label="gallery" aria-label="Galeria de imagens">
+          <a href="assets/shot1.jpg" class="glink"><img src="assets/shot1.jpg" data-i18n-alt="screenshot1" alt="Screenshot 1: deserto com pirâmide"/></a>
+          <a href="assets/shot2.jpg" class="glink"><img src="assets/shot2.jpg" data-i18n-alt="screenshot2" alt="Screenshot 2: floresta pegando fogo"/></a>
+          <a href="assets/shot3.jpg" class="glink"><img src="assets/shot3.jpg" data-i18n-alt="screenshot3" alt="Screenshot 3: noite com lua"/></a>
+          <a href="assets/shot4.jpg" class="glink"><img src="assets/shot4.jpg" data-i18n-alt="screenshot4" alt="Screenshot 4: menu de elementos"/></a>
+          <a href="assets/shot5.jpg" class="glink"><img src="assets/shot5.jpg" data-i18n-alt="screenshot5" alt="Screenshot 5: bioma de neve"/></a>
+          <a href="assets/shot6.jpg" class="glink"><img src="assets/shot6.jpg" data-i18n-alt="screenshot6" alt="Screenshot 6: seleção de níveis"/></a>
         </div>
       </div>
     </div>
@@ -178,48 +179,48 @@
 
   <section id="features">
     <div class="container">
-      <h2 class="section-title">Recursos</h2>
+      <h2 class="section-title" data-i18n="featuresTitle">Recursos</h2>
       <div class="features" role="list">
         <div class="feature" role="listitem">
           <div class="icon" aria-hidden="true">🔥</div>
           <div>
-            <h3>Física de Partículas</h3>
-            <p>Simulações em tempo real com fogo, água, areia, fumaça, gelo, vapor e muito mais.</p>
+            <h3 data-i18n="physicsTitle">Física de Partículas</h3>
+            <p data-i18n="physicsDesc">Simulações em tempo real com fogo, água, areia, fumaça, gelo, vapor e muito mais.</p>
           </div>
         </div>
         <div class="feature" role="listitem">
           <div class="icon" aria-hidden="true">🗺️</div>
           <div>
-            <h3>Biomas e Níveis</h3>
-            <p>Ambientes que influenciam nas reações: deserto, noite eterna, campos em flor, montanhas de magma.</p>
+            <h3 data-i18n="biomesTitle">Biomas e Níveis</h3>
+            <p data-i18n="biomesDesc">Ambientes que influenciam nas reações: deserto, noite eterna, campos em flor, montanhas de magma.</p>
           </div>
         </div>
         <div class="feature" role="listitem">
           <div class="icon" aria-hidden="true">🧨</div>
           <div>
-            <h3>Brinquedos Explosivos</h3>
-            <p>Dinamite, ácido, e mais. Descubra combinações caóticas e hilárias.</p>
+            <h3 data-i18n="explosivesTitle">Brinquedos Explosivos</h3>
+            <p data-i18n="explosivesDesc">Dinamite, ácido, e mais. Descubra combinações caóticas e hilárias.</p>
           </div>
         </div>
         <div class="feature" role="listitem">
           <div class="icon" aria-hidden="true">🎮</div>
           <div>
-            <h3>Controle Simples</h3>
-            <p>Toque e arraste. Interface feita para telas touch — perfeita para iPhone e iPad.</p>
+            <h3 data-i18n="controlsTitle">Controle Simples</h3>
+            <p data-i18n="controlsDesc">Toque e arraste. Interface feita para telas touch — perfeita para iPhone e iPad.</p>
           </div>
         </div>
         <div class="feature" role="listitem">
           <div class="icon" aria-hidden="true">📱</div>
           <div>
-            <h3>Performance Mobile</h3>
-            <p>Roda liso com milhares de partículas, com feedback háptico opcional.</p>
+            <h3 data-i18n="performanceTitle">Performance Mobile</h3>
+            <p data-i18n="performanceDesc">Roda liso com milhares de partículas, com feedback háptico opcional.</p>
           </div>
         </div>
         <div class="feature" role="listitem">
           <div class="icon" aria-hidden="true">✨</div>
           <div>
-            <h3>Pixel Art</h3>
-            <p>Visual retro caprichado, com paletas vivas e UI em estilo arcade.</p>
+            <h3 data-i18n="pixelArtTitle">Pixel Art</h3>
+            <p data-i18n="pixelArtDesc">Visual retro caprichado, com paletas vivas e UI em estilo arcade.</p>
           </div>
         </div>
       </div>
@@ -229,14 +230,14 @@
   <section id="trailer">
     <div class="container two-col">
       <div class="card">
-        <h2 class="section-title">Trailer</h2>
-        <div class="trailer" role="region" aria-label="Trailer do jogo">
+        <h2 class="section-title" data-i18n="trailerTitle">Trailer</h2>
+        <div class="trailer" role="region" data-i18n-aria-label="trailer" aria-label="Trailer do jogo">
           <iframe src="https://www.youtube.com/embed/dQw4wWgXcQ" title="Trailer do Grain Pixel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <div class="card" id="download">
-        <h2 class="section-title">Baixar / Wishlist</h2>
-        <p>Entre para a lista de desejos no Steam e baixe na App Store quando disponível.</p>
+        <h2 class="section-title" data-i18n="downloadTitle">Baixar / Wishlist</h2>
+        <p data-i18n="downloadText">Entre para a lista de desejos no Steam e baixe na App Store quando disponível.</p>
 
         <div class="store-badges" style="margin-top:10px">
           <a href="#" aria-label="Baixar na App Store">
@@ -249,11 +250,11 @@
             <img src="assets/steam.png" alt="Wishlist no Steam" width="180" height="54" loading="lazy">
           </a>
         </div>
-        <p style="margin-top:14px;color:var(--muted);font-size:14px">Receba novidades por e-mail quando sair uma atualização grande.</p>
-        <form class="newsletter" onsubmit="event.preventDefault();alert('Valeu! Vamos te avisar.');">
-          <label for="email" class="sr-only">Seu e-mail</label>
-          <input id="email" name="email" type="email" required placeholder="seunome@email.com" aria-label="Seu e-mail" style="width:100%;padding:14px 12px;border-radius:10px;border:2px solid #1a2e63;background:#0b1736;color:var(--text);margin-bottom:10px">
-          <button class="btn" type="submit" style="width:100%">Quero ser avisado</button>
+        <p style="margin-top:14px;color:var(--muted);font-size:14px" data-i18n="newsletterText">Receba novidades por e-mail quando sair uma atualização grande.</p>
+        <form class="newsletter" onsubmit="event.preventDefault();alert(locales[document.documentElement.lang || 'pt-BR'].subscribeSuccess);">
+          <label for="email" class="sr-only" data-i18n="emailLabel">Seu e-mail</label>
+          <input id="email" name="email" type="email" required data-i18n-placeholder="emailPlaceholder" placeholder="seunome@email.com" data-i18n-aria-label="emailLabel" aria-label="Seu e-mail" style="width:100%;padding:14px 12px;border-radius:10px;border:2px solid #1a2e63;background:#0b1736;color:var(--text);margin-bottom:10px">
+          <button class="btn" type="submit" style="width:100%" data-i18n="subscribeBtn">Quero ser avisado</button>
         </form>
       </div>
     </div>
@@ -261,22 +262,22 @@
 
   <section id="roadmap">
     <div class="container">
-      <h2 class="section-title">Roadmap</h2>
+      <h2 class="section-title" data-i18n="roadmapTitle">Roadmap</h2>
       <div class="roadmap">
         <div class="road-item">
-          <span class="badge">Agora</span>
-          <h3 style="margin:10px 0 6px">Novo Elemento: Ácido</h3>
-          <p style="color:var(--muted)">Interações com areia, pedra e água + efeitos visuais brilhantes.</p>
+          <span class="badge" data-i18n="now">Agora</span>
+          <h3 style="margin:10px 0 6px" data-i18n="acidTitle">Novo Elemento: Ácido</h3>
+          <p style="color:var(--muted)" data-i18n="acidDesc">Interações com areia, pedra e água + efeitos visuais brilhantes.</p>
         </div>
         <div class="road-item">
-          <span class="badge" style="background:var(--accent);color:#3a2402;border-color:#7a540d">Wishlist</span>
-          <h3 style="margin:10px 0 6px">Editor de Cenários</h3>
-          <p style="color:var(--muted)">Monte seu bioma, salve e compartilhe capturas animadas.</p>
+          <span class="badge" style="background:var(--accent);color:#3a2402;border-color:#7a540d" data-i18n="wishlist">Wishlist</span>
+          <h3 style="margin:10px 0 6px" data-i18n="editorTitle">Editor de Cenários</h3>
+          <p style="color:var(--muted)" data-i18n="editorDesc">Monte seu bioma, salve e compartilhe capturas animadas.</p>
         </div>
         <div class="road-item">
-          <span class="badge" style="background:#9fb2d7;color:#0b1736;border-color:#5b6e95">Futuro</span>
-          <h3 style="margin:10px 0 6px">Versão PC</h3>
-          <p style="color:var(--muted)">Aprimoramentos de input, performance e mods leves.</p>
+          <span class="badge" style="background:#9fb2d7;color:#0b1736;border-color:#5b6e95" data-i18n="future">Futuro</span>
+          <h3 style="margin:10px 0 6px" data-i18n="pcTitle">Versão PC</h3>
+          <p style="color:var(--muted)" data-i18n="pcDesc">Aprimoramentos de input, performance e mods leves.</p>
         </div>
       </div>
     </div>
@@ -284,22 +285,22 @@
 
   <footer>
     <div class="container footer-grid">
-      <div class="brand" aria-label="Marca">
-        <img class="brand-logo" src="assets/logo-32.png" alt="Logo em pixel do Grain" />
-        <span class="brand-title">Grain Pixel</span>
+      <div class="brand" data-i18n-aria-label="brand" aria-label="Marca">
+        <img class="brand-logo" src="assets/logo-32.png" data-i18n-alt="brandLogoAlt" alt="Logo em pixel do Grain" />
+        <span class="brand-title" data-i18n="brandTitle">Grain Pixel</span>
       </div>
       <div class="links">
-        <a href="/privacy.html">Política de Privacidade</a>
+        <a href="/privacy.html" data-i18n="privacyPolicy">Política de Privacidade</a>
         <span>•</span>
-        <a href="/terms.html">Termos de Uso</a>
+        <a href="/terms.html" data-i18n="termsOfUse">Termos de Uso</a>
         <span>•</span>
-        <a href="mailto:contato@grainpixel.com">Contato</a>
+        <a href="mailto:contato@grainpixel.com" data-i18n="contact">Contato</a>
       </div>
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagem">
-    <img id="lightboxImg" src="" alt="Imagem ampliada" />
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" data-i18n-aria-label="imageViewer" aria-label="Visualizador de imagem">
+    <img id="lightboxImg" src="" data-i18n-alt="lightboxAlt" alt="Imagem ampliada" />
   </div>
 
   <script>
