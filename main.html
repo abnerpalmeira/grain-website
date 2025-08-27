@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grain Pixel — Fun with Particles</title>
+  <meta name="description" content="Grain Pixel é um sandbox de partículas em pixel art. Crie, destrua e experimente com fogo, água, areia e muito mais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1736;         /* noite azul escura */
+      --bg-2:#0f204a;        /* cards */
+      --primary:#4cc1ff;     /* ciano retro */
+      --accent:#ffc84c;      /* dourado */
+      --ok:#6de28a;          /* verde */
+      --text:#e6eefb;        /* quase branco */
+      --muted:#9fb2d7;
+      --shadow: 0 6px 0 #08102a; /* sombra pixel */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,var(--bg),#102656 40%, #152e69 100%);color:var(--text);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%;height:auto}
+    .container{width:min(1120px, 92vw);margin-inline:auto}
+    header{position:sticky;top:0;z-index:1000;background:rgba(11,23,54,.7);backdrop-filter:blur(8px);border-bottom:2px solid #14224b}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px}
+    .brand-logo{width:28px;height:28px;image-rendering:pixelated}
+    .brand-title{font-family:"Press Start 2P", monospace;font-size:14px;line-height:1}
+    .nav-cta{display:flex;gap:10px;align-items:center}
+
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border:3px solid #1a376f;background:var(--primary);color:#06132f;font-weight:800;border-radius:8px;box-shadow:var(--shadow);text-transform:uppercase;letter-spacing:.5px;image-rendering:pixelated}
+    .btn:hover{transform:translateY(-1px)}
+    .btn:active{transform:translateY(2px);box-shadow:0 0 0 #08102a}
+    .btn.secondary{background:var(--accent)}
+
+    /* HERO */
+    .hero{position:relative;isolation:isolate}
+    .hero video, .hero .hero-fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.2) contrast(1.05) brightness(.9)}
+    .hero .overlay{position:relative;z-index:2;padding:90px 0 110px;background:linear-gradient(180deg,rgba(10,18,40,.65),rgba(10,18,40,.55) 30%, rgba(10,18,40,.75) 70%, rgba(10,18,40,1) 100%)}
+    .hero h1{font-family:"Press Start 2P", monospace;font-size:clamp(26px, 3.5vw, 44px);margin:0 0 14px;text-shadow:0 4px 0 #091434}
+    .tagline{font-size:clamp(14px,1.8vw,18px);color:var(--muted);margin-bottom:26px}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+
+    /* SECTION */
+    section{padding:64px 0;border-top:2px solid rgba(20,34,75,.6)}
+    h2.section-title{font-family:"Press Start 2P", monospace;font-size:20px;margin:0 0 22px;text-transform:uppercase;letter-spacing:.5px}
+    .two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .card{background:linear-gradient(180deg,var(--bg-2),#0d1a3d);border:2px solid #1a2e63;border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+
+    /* FEATURES GRID */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:linear-gradient(180deg,#10214d,#0d1a3d);border:2px solid #1a2e63;border-radius:12px;padding:18px;display:flex;gap:12px;align-items:flex-start;box-shadow:var(--shadow)}
+    .feature .icon{min-width:36px;height:36px;border:2px solid #1a2e63;border-radius:6px;background:#0d1a3d;display:grid;place-items:center;image-rendering:pixelated}
+    .feature h3{margin:4px 0 8px;font-size:16px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+
+    /* GALLERY */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .gallery a{position:relative;border:2px solid #1a2e63;border-radius:10px;overflow:hidden;display:block}
+    .gallery img{width:100%;height:164px;object-fit:cover}
+    .gallery a::after{content:"🔍";position:absolute;right:8px;bottom:6px;font-size:18px;filter:drop-shadow(0 2px 0 #08102a)}
+
+    /* Lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(3,8,20,.85);display:none;align-items:center;justify-content:center;padding:20px;z-index:2000}
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:min(1100px,92vw);max-height:80vh;border:3px solid #1a2e63;border-radius:12px;box-shadow:0 12px 0 #08102a}
+
+    /* TRAILER */
+    .trailer{aspect-ratio:16/9;background:#0c183a;border:2px solid #1a2e63;border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+    .trailer iframe{width:100%;height:100%}
+
+    /* ROADMAP */
+    .roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .road-item{background:linear-gradient(180deg,#0e1d42,#0b1736);border:2px solid #1a2e63;border-radius:12px;box-shadow:var(--shadow);padding:18px}
+    .badge{display:inline-block;background:var(--ok);color:#082016;font-weight:800;letter-spacing:.3px;border:2px solid #145c30;border-radius:8px;padding:6px 10px;text-transform:uppercase;font-size:12px}
+
+    /* FOOTER */
+    footer{padding:48px 0;background:#08132d;border-top:3px solid #122558;margin-top:40px}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+    .links{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted)}
+
+    /* RESPONSIVE */
+    @media (max-width: 980px){
+      .two-col{grid-template-columns:1fr}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .roadmap{grid-template-columns:1fr}
+    }
+    @media (max-width: 520px){
+      .brand-title{font-size:12px}
+      .features{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Topo">
+      <a class="brand" href="#home">
+        <img class="brand-logo" src="assets/logo-32.png" alt="Logo em pixel do Grain" />
+        <span class="brand-title">Grain Pixel</span>
+      </a>
+      <div class="nav-cta">
+        <a class="btn" href="#download" aria-label="Baixar na App Store">
+          <span>App Store</span>
+        </a>
+        <a class="btn secondary" href="#steam" aria-label="Wishlist no Steam">
+          <span>Wishlist Steam</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero" aria-label="Herói">
+    <video autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-label="Gameplay do Grain em loop">
+      <source src="assets/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+      <div class="container">
+        <h1>Fun with Particles</h1>
+        <p class="tagline">Um sandbox de partículas em pixel art para você criar, destruir e experimentar mundos vivos.</p>
+        <div class="cta-row">
+          <a class="btn" href="#download">Baixar</a>
+          <a class="btn secondary" href="#trailer">Assistir Trailer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container two-col">
+      <div class="card">
+        <h2 class="section-title">Sobre o Jogo</h2>
+        <p>Grain Pixel combina física divertida com estética retrô. Misture <strong>fogo</strong>, <strong>água</strong>, <strong>areia</strong>, <strong>gelo</strong>, <strong>vapor</strong> e dezenas de elementos para ver o mundo reagir em tempo real. Crie cenários, acenda dinamites, congele cascatas, e descubra interações emergentes. Simples de jogar, profundo para dominar.</p>
+        <p style="color:var(--muted)">Disponível para <strong>iOS</strong> e com versão <strong>PC</strong> em desenvolvimento.</p>
+      </div>
+      <div class="card">
+        <div class="gallery" aria-label="Galeria de imagens">
+          <!-- Troque os src pelos seus prints reais -->
+          <a href="assets/shot1.jpg" class="glink"><img src="assets/shot1.jpg" alt="Screenshot 1: deserto com pirâmide"/></a>
+          <a href="assets/shot2.jpg" class="glink"><img src="assets/shot2.jpg" alt="Screenshot 2: floresta pegando fogo"/></a>
+          <a href="assets/shot3.jpg" class="glink"><img src="assets/shot3.jpg" alt="Screenshot 3: noite com lua"/></a>
+          <a href="assets/shot4.jpg" class="glink"><img src="assets/shot4.jpg" alt="Screenshot 4: menu de elementos"/></a>
+          <a href="assets/shot5.jpg" class="glink"><img src="assets/shot5.jpg" alt="Screenshot 5: bioma de neve"/></a>
+          <a href="assets/shot6.jpg" class="glink"><img src="assets/shot6.jpg" alt="Screenshot 6: seleção de níveis"/></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="container">
+      <h2 class="section-title">Recursos</h2>
+      <div class="features" role="list">
+        <div class="feature" role="listitem">
+          <div class="icon" aria-hidden="true">🔥</div>
+          <div>
+            <h3>Física de Partículas</h3>
+            <p>Simulações em tempo real com fogo, água, areia, fumaça, gelo, vapor e muito mais.</p>
+          </div>
+        </div>
+        <div class="feature" role="listitem">
+          <div class="icon" aria-hidden="true">🗺️</div>
+          <div>
+            <h3>Biomas e Níveis</h3>
+            <p>Ambientes que influenciam nas reações: deserto, noite eterna, campos em flor, montanhas de magma.</p>
+          </div>
+        </div>
+        <div class="feature" role="listitem">
+          <div class="icon" aria-hidden="true">🧨</div>
+          <div>
+            <h3>Brinquedos Explosivos</h3>
+            <p>Dinamite, ácido, e mais. Descubra combinações caóticas e hilárias.</p>
+          </div>
+        </div>
+        <div class="feature" role="listitem">
+          <div class="icon" aria-hidden="true">🎮</div>
+          <div>
+            <h3>Controle Simples</h3>
+            <p>Toque e arraste. Interface feita para telas touch — perfeita para iPhone e iPad.</p>
+          </div>
+        </div>
+        <div class="feature" role="listitem">
+          <div class="icon" aria-hidden="true">📱</div>
+          <div>
+            <h3>Performance Mobile</h3>
+            <p>Roda liso com milhares de partículas, com feedback háptico opcional.</p>
+          </div>
+        </div>
+        <div class="feature" role="listitem">
+          <div class="icon" aria-hidden="true">✨</div>
+          <div>
+            <h3>Pixel Art</h3>
+            <p>Visual retro caprichado, com paletas vivas e UI em estilo arcade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAILER -->
+  <section id="trailer">
+    <div class="container two-col">
+      <div class="card">
+        <h2 class="section-title">Trailer</h2>
+        <div class="trailer" role="region" aria-label="Trailer do jogo">
+          <!-- Substitua o src pelo seu vídeo do YouTube -->
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Trailer do Grain Pixel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="card" id="download">
+        <h2 class="section-title">Baixar / Wishlist</h2>
+        <p>Entre para a lista de desejos no Steam e baixe na App Store quando disponível.</p>
+        <div class="cta-row" style="margin-top:10px">
+          <a class="btn" href="#">
+            <!-- Você pode trocar por badges oficiais da Apple -->
+            App Store
+          </a>
+          <a class="btn secondary" href="#">
+            Wishlist Steam
+          </a>
+        </div>
+        <p style="margin-top:14px;color:var(--muted);font-size:14px">Receba novidades por e‑mail quando sair uma atualização grande.</p>
+        <form class="newsletter" onsubmit="event.preventDefault();alert('Valeu! Vamos te avisar.');">
+          <label for="email" class="sr-only">Seu e‑mail</label>
+          <input id="email" name="email" type="email" required placeholder="seunome@email.com" aria-label="Seu e‑mail" style="width:100%;padding:14px 12px;border-radius:10px;border:2px solid #1a2e63;background:#0b1736;color:var(--text);margin-bottom:10px">
+          <button class="btn" type="submit" style="width:100%">Quero ser avisado</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap">
+    <div class="container">
+      <h2 class="section-title">Roadmap</h2>
+      <div class="roadmap">
+        <div class="road-item">
+          <span class="badge">Agora</span>
+          <h3 style="margin:10px 0 6px">Novo Elemento: Ácido</h3>
+          <p style="color:var(--muted)">Interações com areia, pedra e água + efeitos visuais brilhantes.</p>
+        </div>
+        <div class="road-item">
+          <span class="badge" style="background:var(--accent);color:#3a2402;border-color:#7a540d">Em breve</span>
+          <h3 style="margin:10px 0 6px">Editor de Cenários</h3>
+          <p style="color:var(--muted)">Monte seu bioma, salve e compartilhe capturas animadas.</p>
+        </div>
+        <div class="road-item">
+          <span class="badge" style="background:#9fb2d7;color:#0b1736;border-color:#5b6e95">Futuro</span>
+          <h3 style="margin:10px 0 6px">Versão PC</h3>
+          <p style="color:var(--muted)">Aprimoramentos de input, performance e mods leves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="brand" aria-label="Marca">
+        <img class="brand-logo" src="assets/logo-32.png" alt="Logo em pixel do Grain" />
+        <span class="brand-title">Grain Pixel</span>
+      </div>
+      <div class="links">
+        <a href="/privacy.html">Política de Privacidade</a>
+        <span>•</span>
+        <a href="/terms.html">Termos de Uso</a>
+        <span>•</span>
+        <a href="mailto:contato@grainpixel.com">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX (JS simples) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagem">
+    <img id="lightboxImg" src="" alt="Imagem ampliada" />
+  </div>
+
+  <script>
+    // Lightbox para a galeria
+    const links = document.querySelectorAll('.glink');
+    const lb = document.getElementById('lightbox');
+    const lbi = document.getElementById('lightboxImg');
+    links.forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        lbi.src = a.getAttribute('href');
+        lb.classList.add('open');
+      });
+    });
+    lb.addEventListener('click', ()=> lb.classList.remove('open'));
+
+    // Ajuda de acessibilidade para leitores de tela
+    const sr = document.createElement('style');
+    sr.textContent = `.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}`;
+    document.head.appendChild(sr);
+  </script>
+</body>
+</html>
