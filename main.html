@@ -30,12 +30,35 @@
     .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px}
     .brand-logo{width:48px;height:48px;image-rendering:pixelated}
     .brand-title{font-family:"Press Start 2P", monospace;font-size:14px;line-height:1}
-    .nav-cta{display:flex;gap:10px;align-items:center}
 
     .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border:3px solid #1a376f;background:var(--primary);color:#06132f;font-weight:800;border-radius:8px;box-shadow:var(--shadow);text-transform:uppercase;letter-spacing:.5px;image-rendering:pixelated}
     .btn:hover{transform:translateY(-1px)}
     .btn:active{transform:translateY(2px);box-shadow:0 0 0 #08102a}
     .btn.secondary{background:var(--accent)}
+
+    /* STORE BADGES */
+    .store-badges{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .store-badges a{
+      display:inline-grid;place-items:center;
+      padding:6px;border-radius:12px;
+      background:linear-gradient(180deg,#10214d,#0d1a3d);
+      border:2px solid #1a2e63; box-shadow:var(--shadow);
+      transition:transform .12s ease, box-shadow .12s ease, filter .12s ease;
+    }
+    .store-badges a:hover{transform:translateY(-2px)}
+    .store-badges a:active{transform:translateY(1px);box-shadow:0 0 0 #08102a}
+    .store-badges img{
+      height:46px;width:auto;display:block;
+      filter:drop-shadow(0 2px 0 #08102a) saturate(1.05) contrast(1.02);
+    }
+    .store-badges .soon{position:relative;opacity:.85}
+    .store-badges .soon::after{
+      content:"Em breve"; position:absolute; top:-8px; right:-8px;
+      background:var(--accent); color:#3a2402; font-weight:800;
+      border:2px solid #7a540d; border-radius:8px; padding:2px 6px;
+      font-size:11px; letter-spacing:.2px;
+    }
+    @media (max-width:720px){ .store-badges img{height:40px} }
 
     /* HERO */
     .hero{position:relative;isolation:isolate}
@@ -104,12 +127,13 @@
         <img class="brand-logo" src="assets/logo-128.png" alt="Logo em pixel do Grain" />
         <span class="brand-title">Grain Pixel</span>
       </a>
-      <div class="nav-cta">
-        <a class="btn" href="#download" aria-label="Baixar na App Store">
-          <span>App Store</span>
+      <!-- Badges no topo -->
+      <div class="store-badges" aria-label="Lojas">
+        <a href="#download" aria-label="Baixar na App Store">
+          <img src="assets/app-store.png" alt="Disponível na App Store" width="180" height="54" loading="eager">
         </a>
-        <a class="btn secondary" href="#steam" aria-label="Wishlist no Steam">
-          <span>Wishlist Steam</span>
+        <a href="#steam" aria-label="Wishlist no Steam">
+          <img src="assets/steam.png" alt="Wishlist no Steam" width="180" height="54" loading="eager">
         </a>
       </div>
     </div>
@@ -142,7 +166,6 @@
       </div>
       <div class="card">
         <div class="gallery" aria-label="Galeria de imagens">
-          <!-- Troque os src pelos seus prints reais -->
           <a href="assets/shot1.jpg" class="glink"><img src="assets/shot1.jpg" alt="Screenshot 1: deserto com pirâmide"/></a>
           <a href="assets/shot2.jpg" class="glink"><img src="assets/shot2.jpg" alt="Screenshot 2: floresta pegando fogo"/></a>
           <a href="assets/shot3.jpg" class="glink"><img src="assets/shot3.jpg" alt="Screenshot 3: noite com lua"/></a>
@@ -211,26 +234,30 @@
       <div class="card">
         <h2 class="section-title">Trailer</h2>
         <div class="trailer" role="region" aria-label="Trailer do jogo">
-          <!-- Substitua o src pelo seu vídeo do YouTube -->
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Trailer do Grain Pixel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/dQw4wWgXcQ" title="Trailer do Grain Pixel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <div class="card" id="download">
         <h2 class="section-title">Baixar / Wishlist</h2>
         <p>Entre para a lista de desejos no Steam e baixe na App Store quando disponível.</p>
-        <div class="cta-row" style="margin-top:10px">
-          <a class="btn" href="#">
-            <!-- Você pode trocar por badges oficiais da Apple -->
-            App Store
+
+        <!-- Badges na seção de download -->
+        <div class="store-badges" style="margin-top:10px">
+          <a href="#" aria-label="Baixar na App Store">
+            <img src="assets/app-store.png" alt="Baixar na App Store" width="180" height="54" loading="lazy">
           </a>
-          <a class="btn secondary" href="#">
-            Wishlist Steam
+          <a href="#" class="soon" aria-label="Baixar no Google Play (em breve)">
+            <img src="assets/google-play.png" alt="Google Play — em breve" width="180" height="54" loading="lazy">
+          </a>
+          <a href="#steam" aria-label="Adicionar à wishlist no Steam">
+            <img src="assets/steam.png" alt="Wishlist no Steam" width="180" height="54" loading="lazy">
           </a>
         </div>
-        <p style="margin-top:14px;color:var(--muted);font-size:14px">Receba novidades por e‑mail quando sair uma atualização grande.</p>
+
+        <p style="margin-top:14px;color:var(--muted);font-size:14px">Receba novidades por e-mail quando sair uma atualização grande.</p>
         <form class="newsletter" onsubmit="event.preventDefault();alert('Valeu! Vamos te avisar.');">
-          <label for="email" class="sr-only">Seu e‑mail</label>
-          <input id="email" name="email" type="email" required placeholder="seunome@email.com" aria-label="Seu e‑mail" style="width:100%;padding:14px 12px;border-radius:10px;border:2px solid #1a2e63;background:#0b1736;color:var(--text);margin-bottom:10px">
+          <label for="email" class="sr-only">Seu e-mail</label>
+          <input id="email" name="email" type="email" required placeholder="seunome@email.com" aria-label="Seu e-mail" style="width:100%;padding:14px 12px;border-radius:10px;border:2px solid #1a2e63;background:#0b1736;color:var(--text);margin-bottom:10px">
           <button class="btn" type="submit" style="width:100%">Quero ser avisado</button>
         </form>
       </div>
