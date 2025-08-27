@@ -11,14 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg: #0b1736;         /* noite azul escura */
-      --bg-2:#0f204a;        /* cards */
-      --primary:#4cc1ff;     /* ciano retro */
-      --accent:#ffc84c;      /* dourado */
-      --ok:#6de28a;          /* verde */
-      --text:#e6eefb;        /* quase branco */
+      --bg: #0b1736;
+      --bg-2:#0f204a;
+      --primary:#4cc1ff;
+      --accent:#ffc84c;
+      --ok:#6de28a;
+      --text:#e6eefb;
       --muted:#9fb2d7;
-      --shadow: 0 6px 0 #08102a; /* sombra pixel */
+      --shadow: 0 6px 0 #08102a;
     }
     *{box-sizing:border-box}
     html,body{margin:0;background:linear-gradient(180deg,var(--bg),#102656 40%, #152e69 100%);color:var(--text);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";}
@@ -44,6 +44,7 @@
       background:linear-gradient(180deg,#10214d,#0d1a3d);
       border:2px solid #1a2e63; box-shadow:var(--shadow);
       transition:transform .12s ease, box-shadow .12s ease, filter .12s ease;
+      position:relative;
     }
     .store-badges a:hover{transform:translateY(-2px)}
     .store-badges a:active{transform:translateY(1px);box-shadow:0 0 0 #08102a}
@@ -51,9 +52,8 @@
       height:46px;width:auto;display:block;
       filter:drop-shadow(0 2px 0 #08102a) saturate(1.05) contrast(1.02);
     }
-    .store-badges .soon{position:relative;opacity:.85}
     .store-badges .soon::after{
-      content:"Em breve"; position:absolute; top:-8px; right:-8px;
+      content:"Wishlist"; position:absolute; top:-8px; right:-8px;
       background:var(--accent); color:#3a2402; font-weight:800;
       border:2px solid #7a540d; border-radius:8px; padding:2px 6px;
       font-size:11px; letter-spacing:.2px;
@@ -120,26 +120,26 @@
   </style>
 </head>
 <body>
-  <!-- HEADER -->
   <header>
     <div class="container nav" role="navigation" aria-label="Topo">
       <a class="brand" href="#home">
         <img class="brand-logo" src="assets/logo-128.png" alt="Logo em pixel do Grain" />
         <span class="brand-title">Grain Pixel</span>
       </a>
-      <!-- Badges no topo -->
       <div class="store-badges" aria-label="Lojas">
         <a href="#download" aria-label="Baixar na App Store">
           <img src="assets/app-store.png" alt="Disponível na App Store" width="180" height="54" loading="eager">
         </a>
-        <a href="#steam" aria-label="Wishlist no Steam">
+        <a href="#download" aria-label="Baixar no Google Play">
+          <img src="assets/google-play.png" alt="Disponível no Google Play" width="180" height="54" loading="eager">
+        </a>
+        <a href="#steam" class="soon" aria-label="Wishlist no Steam">
           <img src="assets/steam.png" alt="Wishlist no Steam" width="180" height="54" loading="eager">
         </a>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
   <section id="home" class="hero" aria-label="Herói">
     <video autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-label="Gameplay do Grain em loop">
       <source src="assets/hero.mp4" type="video/mp4" />
@@ -156,7 +156,6 @@
     </div>
   </section>
 
-  <!-- SOBRE -->
   <section id="sobre">
     <div class="container two-col">
       <div class="card">
@@ -177,7 +176,6 @@
     </div>
   </section>
 
-  <!-- FEATURES -->
   <section id="features">
     <div class="container">
       <h2 class="section-title">Recursos</h2>
@@ -228,7 +226,6 @@
     </div>
   </section>
 
-  <!-- TRAILER -->
   <section id="trailer">
     <div class="container two-col">
       <div class="card">
@@ -241,19 +238,17 @@
         <h2 class="section-title">Baixar / Wishlist</h2>
         <p>Entre para a lista de desejos no Steam e baixe na App Store quando disponível.</p>
 
-        <!-- Badges na seção de download -->
         <div class="store-badges" style="margin-top:10px">
           <a href="#" aria-label="Baixar na App Store">
             <img src="assets/app-store.png" alt="Baixar na App Store" width="180" height="54" loading="lazy">
           </a>
-          <a href="#" class="soon" aria-label="Baixar no Google Play (em breve)">
-            <img src="assets/google-play.png" alt="Google Play — em breve" width="180" height="54" loading="lazy">
+          <a href="#" aria-label="Baixar no Google Play">
+            <img src="assets/google-play.png" alt="Baixar no Google Play" width="180" height="54" loading="lazy">
           </a>
-          <a href="#steam" aria-label="Adicionar à wishlist no Steam">
+          <a href="#steam" class="soon" aria-label="Adicionar à wishlist no Steam">
             <img src="assets/steam.png" alt="Wishlist no Steam" width="180" height="54" loading="lazy">
           </a>
         </div>
-
         <p style="margin-top:14px;color:var(--muted);font-size:14px">Receba novidades por e-mail quando sair uma atualização grande.</p>
         <form class="newsletter" onsubmit="event.preventDefault();alert('Valeu! Vamos te avisar.');">
           <label for="email" class="sr-only">Seu e-mail</label>
@@ -264,7 +259,6 @@
     </div>
   </section>
 
-  <!-- ROADMAP -->
   <section id="roadmap">
     <div class="container">
       <h2 class="section-title">Roadmap</h2>
@@ -275,7 +269,7 @@
           <p style="color:var(--muted)">Interações com areia, pedra e água + efeitos visuais brilhantes.</p>
         </div>
         <div class="road-item">
-          <span class="badge" style="background:var(--accent);color:#3a2402;border-color:#7a540d">Em breve</span>
+          <span class="badge" style="background:var(--accent);color:#3a2402;border-color:#7a540d">Wishlist</span>
           <h3 style="margin:10px 0 6px">Editor de Cenários</h3>
           <p style="color:var(--muted)">Monte seu bioma, salve e compartilhe capturas animadas.</p>
         </div>
@@ -288,7 +282,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container footer-grid">
       <div class="brand" aria-label="Marca">
@@ -305,7 +298,6 @@
     </div>
   </footer>
 
-  <!-- LIGHTBOX (JS simples) -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagem">
     <img id="lightboxImg" src="" alt="Imagem ampliada" />
   </div>
