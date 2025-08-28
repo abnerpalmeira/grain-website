@@ -18,9 +18,7 @@ export const Footer: React.FC = () => {
         <div className="links">
           <a href="/privacy-policy">{t('privacyPolicy')}</a>
           <span>•</span>
-          <a href="/terms.html">{t('termsOfUse')}</a>
-          <span>•</span>
-          <a href="mailto:contato@grainpixel.com">{t('contact')}</a>
+          <a href="/contact">{t('contact')}</a>
         </div>
       </div>
     </footer>

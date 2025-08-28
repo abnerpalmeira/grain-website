@@ -742,3 +742,63 @@ footer {
 .privacy-policy strong {
   color: var(--accent);
 }
+
+/* Contact Page */
+.contact-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+  line-height: 1.6;
+}
+
+.contact-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.contact-page h2 {
+  font-size: 1.5rem;
+  margin: 30px 0 15px 0;
+  color: var(--accent);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 8px;
+}
+
+.contact-page p {
+  margin-bottom: 15px;
+  color: var(--text);
+}
+
+.contact-page .contact-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: var(--muted);
+}
+
+.contact-page .contact-outro {
+  text-align: center;
+  font-style: italic;
+  margin-top: 30px;
+  color: var(--muted);
+}
+
+.contact-section {
+  background: var(--bg-2);
+  border: 2px solid #1a376f;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.contact-section h2 {
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.contact-section strong {
+  color: var(--accent);
+}

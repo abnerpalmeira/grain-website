@@ -81,8 +81,17 @@ export const ja: LocalizationData = {
   
   // Footer
   privacyPolicy: 'プライバシーポリシー',
-  termsOfUse: '利用規約',
   contact: 'お問い合わせ',
+  
+  // Contact Page
+  contactIntro: 'プレイヤーの皆様からのお声を聞くのが大好きです！質問、バグの報告、素晴らしい提案、または単に挨拶したい場合でも、ここが正しい場所です。',
+  generalSupportTitle: '一般的なサポートと質問',
+  generalSupportText: 'ゲームに関する技術的な問題や質問がある場合は、サポートチームまでメールでお問い合わせください。使用しているデバイスなど、できるだけ詳細な情報を含めてください。',
+  feedbackTitle: 'フィードバックと提案',
+  feedbackText: '新しい要素、クレイジーな反応、Grain Pixelをさらに良くする機能のアイデアがありますか？ぜひ聞かせてください！',
+  pressTitle: 'プレスとパートナーシップ',
+  pressText: 'プレス関係者、コンテンツクリエイター、またはパートナーシップに興味がある場合は、以下のメールでお問い合わせください。',
+  contactOutro: 'お問い合わせいただき、ありがとうございます。できるだけ早くお返事するよう努めます！',
   
   // Privacy Policy
   privacyPolicyTitle: 'Grain Pixel プライバシーポリシー',

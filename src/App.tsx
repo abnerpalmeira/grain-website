@@ -10,6 +10,7 @@ import { Roadmap } from '@/components/Roadmap';
 import { Footer } from '@/components/Footer';
 import { Lightbox } from '@/components/Lightbox';
 import { PrivacyPolicy } from '@/components/PrivacyPolicy';
+import { Contact } from '@/components/Contact';
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const App: React.FC = () => {
             </main>
           } />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
         <Lightbox />

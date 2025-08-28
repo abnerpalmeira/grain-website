@@ -79,8 +79,17 @@ export interface LocalizationData {
   
   // Footer
   privacyPolicy: string;
-  termsOfUse: string;
   contact: string;
+  
+  // Contact Page
+  contactIntro: string;
+  generalSupportTitle: string;
+  generalSupportText: string;
+  feedbackTitle: string;
+  feedbackText: string;
+  pressTitle: string;
+  pressText: string;
+  contactOutro: string;
   
   // Privacy Policy
   privacyPolicyTitle: string;

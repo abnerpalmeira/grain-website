@@ -81,8 +81,17 @@ export const ko: LocalizationData = {
   
   // Footer
   privacyPolicy: '개인정보 처리방침',
-  termsOfUse: '이용약관',
   contact: '연락처',
+  
+  // Contact Page
+  contactIntro: '플레이어들의 소식을 듣는 것을 좋아합니다! 질문이 있거나, 버그를 발견했거나, 멋진 제안이 있거나, 단순히 인사를 하고 싶다면, 여기가 바로 그곳입니다.',
+  generalSupportTitle: '일반 지원 및 문의',
+  generalSupportText: '게임에 대한 기술적 문제나 질문이 있으시면 지원팀에 이메일을 보내주세요. 사용 중인 기기 등 가능한 한 많은 세부사항을 포함해 주세요.',
+  feedbackTitle: '피드백 및 제안',
+  feedbackText: '새로운 요소, 미친 반응, 또는 Grain Pixel을 더욱 좋게 만들 기능에 대한 아이디어가 있나요? 듣고 싶습니다!',
+  pressTitle: '언론 및 파트너십',
+  pressText: '언론인, 콘텐츠 크리에이터이거나 파트너십에 관심이 있으시면 아래 이메일로 연락해 주세요.',
+  contactOutro: '연락해 주셔서 감사합니다. 최대한 빨리 답변 드리도록 하겠습니다!',
   
   // Privacy Policy
   privacyPolicyTitle: 'Grain Pixel 개인정보 처리방침',

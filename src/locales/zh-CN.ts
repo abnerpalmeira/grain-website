@@ -81,8 +81,17 @@ export const zhCN: LocalizationData = {
   
   // Footer
   privacyPolicy: '隐私政策',
-  termsOfUse: '使用条款',
   contact: '联系我们',
+  
+  // Contact Page
+  contactIntro: '我们喜欢听到玩家的声音！无论您有疑问、发现错误、有很棒的建议，还是只想打个招呼，这里都是正确的地方。',
+  generalSupportTitle: '一般支持和问题',
+  generalSupportText: '对于任何技术问题或关于游戏的问题，请发送电子邮件给我们的支持团队。请尝试包含尽可能多的详细信息，例如您使用的设备。',
+  feedbackTitle: '反馈和建议',
+  feedbackText: '有新元素、疯狂反应或能让 Grain Pixel 变得更好的功能的想法吗？我们很想听听！',
+  pressTitle: '媒体和合作',
+  pressText: '如果您是媒体成员、内容创作者或对合作感兴趣，请通过下面的电子邮件联系我们。',
+  contactOutro: '感谢您的联系，我们会尽最大努力尽快回复您！',
   
   // Privacy Policy
   privacyPolicyTitle: 'Grain Pixel 隐私政策',

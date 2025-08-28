@@ -81,8 +81,17 @@ export const enUS: LocalizationData = {
   
   // Footer
   privacyPolicy: 'Privacy Policy',
-  termsOfUse: 'Terms of Use',
   contact: 'Contact',
+  
+  // Contact Page
+  contactIntro: 'We love hearing from our players! Whether you have a question, found a bug, have an awesome suggestion, or just want to say hello, this is the right place.',
+  generalSupportTitle: 'General Support & Questions',
+  generalSupportText: 'For any technical issues or questions about the game, please email our support team. Try to include as many details as possible, like the device you\'re using.',
+  feedbackTitle: 'Feedback & Suggestions',
+  feedbackText: 'Have an idea for a new element, a crazy reaction, or a feature that would make Grain Pixel even better? We\'d love to hear it!',
+  pressTitle: 'Press & Partnerships',
+  pressText: 'If you are a member of the press, a content creator, or are interested in a partnership, please contact us at the email below.',
+  contactOutro: 'Thank you for reaching out, and we\'ll do our best to get back to you as soon as possible!',
   
   // Privacy Policy
   privacyPolicyTitle: 'Privacy Policy for Grain Pixel',
