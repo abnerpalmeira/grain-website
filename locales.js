@@ -31,6 +31,16 @@ const locales = {
     screenshot5: 'Screenshot 5: bioma de neve',
     screenshot6: 'Screenshot 6: seleção de níveis',
     
+    // Gallery images - localized for pt-BR
+    galleryImages: [
+      { src: 'assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+      { src: 'assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+      { src: 'assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+      { src: 'assets/screenshots/pt_BR/elements.PNG', alt: 'screenshot4' },
+      { src: 'assets/screenshots/pt_BR/settings.PNG', alt: 'screenshot5' },
+      { src: 'assets/screenshots/pt_BR/levels.PNG', alt: 'screenshot6' }
+    ],
+    
     // Features section
     featuresTitle: 'Recursos',
     physicsTitle: 'Física de Partículas',
@@ -118,6 +128,16 @@ const locales = {
     screenshot5: 'Screenshot 5: snow biome',
     screenshot6: 'Screenshot 6: level selection',
     
+    // Gallery images - localized for en-US
+    galleryImages: [
+      { src: 'assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+      { src: 'assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+      { src: 'assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+      { src: 'assets/screenshots/en/elements.PNG', alt: 'screenshot4' },
+      { src: 'assets/screenshots/en/settings.PNG', alt: 'screenshot5' },
+      { src: 'assets/screenshots/en/levels.PNG', alt: 'screenshot6' }
+    ],
+    
     // Features section
     featuresTitle: 'Features',
     physicsTitle: 'Particle Physics',
@@ -171,6 +191,200 @@ const locales = {
     trailer: 'Game trailer',
     brand: 'Brand',
     imageViewer: 'Image viewer'
+  },
+  
+  'de': {
+    // Meta tags
+    title: 'Grain Pixel — Fun with Particles',
+    description: 'Grain Pixel ist ein Pixel-Art-Partikel-Sandbox. Erschaffe, zerstöre und experimentiere mit Feuer, Wasser, Sand und vielem mehr.',
+    
+    // Header
+    brandTitle: 'Grain Pixel',
+    brandLogoAlt: 'Grain Pixel-Logo',
+    appStoreAlt: 'Im App Store verfügbar',
+    googlePlayAlt: 'Bei Google Play verfügbar',
+    steamAlt: 'Zur Steam-Wunschliste hinzufügen',
+    wishlist: 'Wunschliste',
+    
+    // Hero section
+    heroTitle: 'Fun with Particles',
+    tagline: 'Ein Pixel-Art-Partikel-Sandbox, in dem du lebende Welten erschaffen, zerstören und mit ihnen experimentieren kannst.',
+    downloadBtn: 'Herunterladen',
+    watchTrailerBtn: 'Trailer ansehen',
+    
+    // About section
+    aboutTitle: 'Über das Spiel',
+    aboutText: 'Grain Pixel kombiniert lustige Physik mit Retro-Ästhetik. Mische <strong>Feuer</strong>, <strong>Wasser</strong>, <strong>Sand</strong>, <strong>Eis</strong>, <strong>Dampf</strong> und Dutzende von Elementen, um zu sehen, wie die Welt in Echtzeit reagiert. Erstelle Szenarien, zünde Dynamit an, friere Wasserfälle ein und entdecke aufkommende Interaktionen. Einfach zu spielen, tiefgründig zu meistern.',
+    aboutAvailability: 'Verfügbar für <strong>iOS</strong> mit <strong>PC</strong>-Version in Entwicklung.',
+    
+    // Gallery
+    screenshot1: 'Screenshot 1: Wüste mit Pyramide',
+    screenshot2: 'Screenshot 2: Wald in Flammen',
+    screenshot3: 'Screenshot 3: Nacht mit Mond',
+    screenshot4: 'Screenshot 4: Elemente-Menü',
+    screenshot5: 'Screenshot 5: Schnee-Biom',
+    screenshot6: 'Screenshot 6: Level-Auswahl',
+    
+    // Gallery images - localized for German
+    galleryImages: [
+      { src: 'assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+      { src: 'assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+      { src: 'assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+      { src: 'assets/screenshots/de/elements.PNG', alt: 'screenshot4' },
+      { src: 'assets/screenshots/de/settings.PNG', alt: 'screenshot5' },
+      { src: 'assets/screenshots/de/levels.PNG', alt: 'screenshot6' }
+    ],
+    
+    // Features section
+    featuresTitle: 'Funktionen',
+    physicsTitle: 'Partikelphysik',
+    physicsDesc: 'Echtzeit-Simulationen mit Feuer, Wasser, Sand, Rauch, Eis, Dampf und vielem mehr.',
+    biomesTitle: 'Biome & Level',
+    biomesDesc: 'Umgebungen, die Reaktionen beeinflussen: Wüste, ewige Nacht, blühende Felder, Magma-Berge.',
+    explosivesTitle: 'Explosive Spielzeuge',
+    explosivesDesc: 'Dynamit, Säure und mehr. Entdecke chaotische und urkomische Kombinationen.',
+    controlsTitle: 'Einfache Steuerung',
+    controlsDesc: 'Berühren und ziehen. Interface für Touchscreens gemacht — perfekt für iPhone und iPad.',
+    performanceTitle: 'Mobile Performance',
+    performanceDesc: 'Läuft flüssig mit Tausenden von Partikeln, mit optionalem haptischem Feedback.',
+    pixelArtTitle: 'Pixel Art',
+    pixelArtDesc: 'Polierte Retro-Grafiken mit lebendigen Paletten und Arcade-Style UI.',
+    
+    // Trailer section
+    trailerTitle: 'Trailer',
+    downloadTitle: 'Herunterladen / Wunschliste',
+    downloadText: 'Tritt der Steam-Wunschliste bei und lade von der App Store herunter, wenn verfügbar.',
+    newsletterText: 'Erhalte E-Mail-Updates bei wichtigen Updates.',
+    emailPlaceholder: 'deinname@email.com',
+    emailLabel: 'Deine E-Mail',
+    subscribeBtn: 'Benachrichtige mich',
+    subscribeSuccess: 'Danke! Wir lassen es dich wissen.',
+    
+    // Roadmap section
+    roadmapTitle: 'Roadmap',
+    now: 'Jetzt',
+    wishlist: 'Wunschliste',
+    future: 'Zukunft',
+    acidTitle: 'Neues Element: Säure',
+    acidDesc: 'Interaktionen mit Sand, Stein und Wasser + brillante visuelle Effekte.',
+    editorTitle: 'Szenario-Editor',
+    editorDesc: 'Baue dein Biom, speichere und teile animierte Aufnahmen.',
+    pcTitle: 'PC-Version',
+    pcDesc: 'Input-Verbesserungen, Performance und leichte Mods.',
+    
+    // Footer
+    privacyPolicy: 'Datenschutzrichtlinie',
+    termsOfUse: 'Nutzungsbedingungen',
+    contact: 'Kontakt',
+    
+    // Lightbox
+    lightboxAlt: 'Vergrößertes Bild',
+    
+    // Navigation
+    navigation: 'Nach oben',
+    stores: 'Shops',
+    hero: 'Held',
+    gallery: 'Bildergalerie',
+    trailer: 'Spiel-Trailer',
+    brand: 'Marke',
+    imageViewer: 'Bildbetrachter'
+  },
+  
+  'fr': {
+    // Meta tags
+    title: 'Grain Pixel — Fun with Particles',
+    description: 'Grain Pixel est un bac à sable de particules en pixel art. Créez, détruisez et expérimentez avec le feu, l\'eau, le sable et bien plus encore.',
+    
+    // Header
+    brandTitle: 'Grain Pixel',
+    brandLogoAlt: 'Logo Grain Pixel',
+    appStoreAlt: 'Disponible sur l\'App Store',
+    googlePlayAlt: 'Disponible sur Google Play',
+    steamAlt: 'Ajouter à la liste de souhaits Steam',
+    wishlist: 'Liste de souhaits',
+    
+    // Hero section
+    heroTitle: 'Fun with Particles',
+    tagline: 'Un bac à sable de particules en pixel art pour créer, détruire et expérimenter avec des mondes vivants.',
+    downloadBtn: 'Télécharger',
+    watchTrailerBtn: 'Regarder la bande-annonce',
+    
+    // About section
+    aboutTitle: 'À propos du jeu',
+    aboutText: 'Grain Pixel combine une physique amusante avec une esthétique rétro. Mélangez <strong>feu</strong>, <strong>eau</strong>, <strong>sable</strong>, <strong>glace</strong>, <strong>vapeur</strong> et des dizaines d\'éléments pour voir le monde réagir en temps réel. Créez des scénarios, allumez des dynamites, congelez des cascades et découvrez des interactions émergentes. Simple à jouer, profond à maîtriser.',
+    aboutAvailability: 'Disponible pour <strong>iOS</strong> avec version <strong>PC</strong> en développement.',
+    
+    // Gallery
+    screenshot1: 'Capture d\'écran 1: désert avec pyramide',
+    screenshot2: 'Capture d\'écran 2: forêt en feu',
+    screenshot3: 'Capture d\'écran 3: nuit avec lune',
+    screenshot4: 'Capture d\'écran 4: menu des éléments',
+    screenshot5: 'Capture d\'écran 5: biome de neige',
+    screenshot6: 'Capture d\'écran 6: sélection de niveau',
+    
+    // Gallery images - localized for French
+    galleryImages: [
+      { src: 'assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+      { src: 'assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+      { src: 'assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+      { src: 'assets/screenshots/fr/IMG_0794.PNG', alt: 'screenshot4' },
+      { src: 'assets/screenshots/fr/IMG_0795.PNG', alt: 'screenshot5' },
+      { src: 'assets/screenshots/fr/IMG_0796.PNG', alt: 'screenshot6' }
+    ],
+    
+    // Features section
+    featuresTitle: 'Fonctionnalités',
+    physicsTitle: 'Physique des particules',
+    physicsDesc: 'Simulations en temps réel avec feu, eau, sable, fumée, glace, vapeur et bien plus encore.',
+    biomesTitle: 'Biomes et niveaux',
+    biomesDesc: 'Environnements qui influencent les réactions: désert, nuit éternelle, champs fleuris, montagnes de magma.',
+    explosivesTitle: 'Jouets explosifs',
+    explosivesDesc: 'Dynamite, acide et plus encore. Découvrez des combinaisons chaotiques et hilarantes.',
+    controlsTitle: 'Contrôles simples',
+    controlsDesc: 'Touchez et glissez. Interface conçue pour les écrans tactiles — parfaite pour iPhone et iPad.',
+    performanceTitle: 'Performance mobile',
+    performanceDesc: 'Fonctionne en douceur avec des milliers de particules, avec retour haptique optionnel.',
+    pixelArtTitle: 'Pixel Art',
+    pixelArtDesc: 'Visuels rétro soignés, avec des palettes vibrantes et une UI de style arcade.',
+    
+    // Trailer section
+    trailerTitle: 'Bande-annonce',
+    downloadTitle: 'Télécharger / Liste de souhaits',
+    downloadText: 'Rejoignez la liste de souhaits Steam et téléchargez depuis l\'App Store quand disponible.',
+    newsletterText: 'Recevez des mises à jour par e-mail lors de mises à jour majeures.',
+    emailPlaceholder: 'votrenom@email.com',
+    emailLabel: 'Votre e-mail',
+    subscribeBtn: 'Notifiez-moi',
+    subscribeSuccess: 'Merci ! Nous vous tiendrons au courant.',
+    
+    // Roadmap section
+    roadmapTitle: 'Feuille de route',
+    now: 'Maintenant',
+    wishlist: 'Liste de souhaits',
+    future: 'Avenir',
+    acidTitle: 'Nouvel élément: Acide',
+    acidDesc: 'Interactions avec le sable, la pierre et l\'eau + effets visuels brillants.',
+    editorTitle: 'Éditeur de scénarios',
+    editorDesc: 'Construisez votre biome, sauvegardez et partagez des captures animées.',
+    pcTitle: 'Version PC',
+    pcDesc: 'Améliorations d\'entrée, performance et mods légers.',
+    
+    // Footer
+    privacyPolicy: 'Politique de confidentialité',
+    termsOfUse: 'Conditions d\'utilisation',
+    contact: 'Contact',
+    
+    // Lightbox
+    lightboxAlt: 'Image agrandie',
+    
+    // Navigation
+    navigation: 'Haut',
+    stores: 'Magasins',
+    hero: 'Héros',
+    gallery: 'Galerie d\'images',
+    trailer: 'Bande-annonce du jeu',
+    brand: 'Marque',
+    imageViewer: 'Visionneuse d\'image'
   }
 };
 
@@ -213,6 +427,9 @@ class LocalizationManager {
     
     // Update CSS content for wishlist badge
     this.updateWishlistBadge(locale.wishlist);
+    
+    // Update gallery images based on locale
+    this.updateGalleryImages(locale);
   }
   
   updateElementText(selector, locale, attribute = 'textContent') {
@@ -226,6 +443,31 @@ class LocalizationManager {
           element.setAttribute(attribute, locale[key]);
         }
       }
+    });
+  }
+  
+  updateGalleryImages(locale) {
+    if (!locale.galleryImages) return;
+    
+    const gallery = document.querySelector('.gallery');
+    if (!gallery) return;
+    
+    // Clear existing images
+    gallery.innerHTML = '';
+    
+    // Add new localized images
+    locale.galleryImages.forEach((image, index) => {
+      const link = document.createElement('a');
+      link.href = image.src;
+      link.className = 'glink';
+      
+      const img = document.createElement('img');
+      img.src = image.src;
+      img.setAttribute('data-i18n-alt', image.alt);
+      img.alt = locale[image.alt] || `Screenshot ${index + 1}`;
+      
+      link.appendChild(img);
+      gallery.appendChild(link);
     });
   }
   
@@ -245,8 +487,39 @@ class LocalizationManager {
     const languageSwitcher = document.createElement('div');
     languageSwitcher.className = 'language-switcher';
     languageSwitcher.innerHTML = `
-      <button class="lang-btn" data-locale="pt-BR">🇧🇷</button>
-      <button class="lang-btn" data-locale="en-US">🇺🇸</button>
+      <div class="lang-dropdown">
+        <button class="lang-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-flag">🇧🇷</span>
+          <span class="lang-text">PT</span>
+          <span class="lang-arrow">▼</span>
+        </button>
+        <ul class="lang-dropdown-menu" role="menu">
+          <li role="none">
+            <button class="lang-option" data-locale="pt-BR" role="menuitem">
+              <span class="lang-flag">🇧🇷</span>
+              <span class="lang-name">Português</span>
+            </button>
+          </li>
+          <li role="none">
+            <button class="lang-option" data-locale="en-US" role="menuitem">
+              <span class="lang-flag">🇺🇸</span>
+              <span class="lang-name">English</span>
+            </button>
+          </li>
+          <li role="none">
+            <button class="lang-option" data-locale="de" role="menuitem">
+              <span class="lang-flag">🇩🇪</span>
+              <span class="lang-name">Deutsch</span>
+            </button>
+          </li>
+          <li role="none">
+            <button class="lang-option" data-locale="fr" role="menuitem">
+              <span class="lang-flag">🇫🇷</span>
+              <span class="lang-name">Français</span>
+            </button>
+          </li>
+        </ul>
+      </div>
     `;
     
     header.appendChild(languageSwitcher);
@@ -255,45 +528,198 @@ class LocalizationManager {
     const style = document.createElement('style');
     style.textContent = `
       .language-switcher {
+        position: relative;
         display: flex;
-        gap: 8px;
         align-items: center;
       }
-      .lang-btn {
+      
+      .lang-dropdown {
+        position: relative;
+      }
+      
+      .lang-dropdown-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
         background: none;
         border: 2px solid #1a2e63;
-        border-radius: 6px;
-        padding: 8px;
+        border-radius: 8px;
+        padding: 8px 12px;
         cursor: pointer;
         transition: all 0.2s ease;
-        font-size: 16px;
+        font-size: 14px;
+        color: var(--text);
+        min-width: 80px;
+        justify-content: space-between;
       }
-      .lang-btn:hover {
+      
+      .lang-dropdown-btn:hover {
         background: var(--primary);
         border-color: var(--primary);
         transform: translateY(-1px);
       }
-      .lang-btn.active {
-        background: var(--accent);
-        border-color: var(--accent);
+      
+      .lang-dropdown-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(26, 46, 99, 0.3);
+      }
+      
+      .lang-flag {
+        font-size: 16px;
+      }
+      
+      .lang-text {
+        font-weight: 600;
+        color: var(--text);
+      }
+      
+      .lang-arrow {
+        font-size: 10px;
+        transition: transform 0.2s ease;
+        color: var(--muted);
+      }
+      
+      .lang-dropdown.active .lang-arrow {
+        transform: rotate(180deg);
+      }
+      
+      .lang-dropdown-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--bg);
+        border: 2px solid #1a2e63;
+        border-radius: 8px;
+        padding: 8px 0;
+        margin-top: 4px;
+        list-style: none;
+        min-width: 140px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.2s ease;
+        z-index: 1000;
+      }
+      
+      .lang-dropdown.active .lang-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+      
+      .lang-option {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        padding: 10px 16px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        color: var(--text);
+        font-size: 14px;
+        text-align: left;
+      }
+      
+      .lang-option:hover {
+        background: var(--primary);
         color: #3a2402;
+      }
+      
+      .lang-option.active {
+        background: var(--accent);
+        color: #3a2402;
+        font-weight: 600;
+      }
+      
+      .lang-name {
+        font-weight: 500;
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .lang-dropdown-btn {
+          padding: 6px 10px;
+          min-width: 70px;
+        }
+        
+        .lang-text {
+          display: none;
+        }
+        
+        .lang-dropdown-menu {
+          right: -20px;
+        }
       }
     `;
     document.head.appendChild(style);
   }
   
   updateLanguageSwitcher() {
-    const buttons = document.querySelectorAll('.lang-btn');
-    buttons.forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.locale === this.currentLocale);
+    // Update dropdown button
+    const dropdownBtn = document.querySelector('.lang-dropdown-btn');
+    if (dropdownBtn) {
+      const flag = dropdownBtn.querySelector('.lang-flag');
+      const text = dropdownBtn.querySelector('.lang-text');
+      
+      // Update flag and text based on current locale
+      const localeInfo = {
+        'pt-BR': { flag: '🇧🇷', text: 'PT' },
+        'en-US': { flag: '🇺🇸', text: 'EN' },
+        'de': { flag: '🇩🇪', text: 'DE' },
+        'fr': { flag: '🇫🇷', text: 'FR' }
+      };
+      
+      if (localeInfo[this.currentLocale]) {
+        flag.textContent = localeInfo[this.currentLocale].flag;
+        text.textContent = localeInfo[this.currentLocale].text;
+      }
+    }
+    
+    // Update active state in dropdown menu
+    const options = document.querySelectorAll('.lang-option');
+    options.forEach(option => {
+      option.classList.toggle('active', option.dataset.locale === this.currentLocale);
     });
   }
   
   bindEvents() {
+    // Handle dropdown toggle
     document.addEventListener('click', (e) => {
-      if (e.target.classList.contains('lang-btn')) {
+      const dropdown = document.querySelector('.lang-dropdown');
+      const dropdownBtn = document.querySelector('.lang-dropdown-btn');
+      
+      if (e.target === dropdownBtn) {
+        // Toggle dropdown
+        dropdown.classList.toggle('active');
+        const isExpanded = dropdown.classList.contains('active');
+        dropdownBtn.setAttribute('aria-expanded', isExpanded);
+      } else if (e.target.classList.contains('lang-option')) {
+        // Language selection
         const locale = e.target.dataset.locale;
         this.setLanguage(locale);
+        
+        // Close dropdown
+        dropdown.classList.remove('active');
+        dropdownBtn.setAttribute('aria-expanded', 'false');
+      } else if (!dropdown.contains(e.target)) {
+        // Close dropdown when clicking outside
+        dropdown.classList.remove('active');
+        dropdownBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    // Handle keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      const dropdown = document.querySelector('.lang-dropdown');
+      const dropdownBtn = document.querySelector('.lang-dropdown-btn');
+      
+      if (e.key === 'Escape' && dropdown.classList.contains('active')) {
+        dropdown.classList.remove('active');
+        dropdownBtn.setAttribute('aria-expanded', 'false');
+        dropdownBtn.focus();
       }
     });
     
