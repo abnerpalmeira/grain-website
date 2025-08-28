@@ -84,6 +84,27 @@ export const ptBR: LocalizationData = {
   termsOfUse: 'Termos de Uso',
   contact: 'Contato',
   
+  // Privacy Policy
+  privacyPolicyTitle: 'Política de Privacidade do Grain Pixel',
+  lastUpdated: 'Última atualização',
+  privacyPolicyIntro: 'Esta Política de Privacidade descreve nossas políticas sobre a coleta, uso e divulgação de suas informações quando você usa nosso Serviço e informa sobre seus direitos de privacidade e como a lei o protege.',
+  collectionUseTitle: 'Coleta e Uso de Dados Pessoais',
+  collectionUseText1: 'Não coletamos nenhuma informação pessoalmente identificável através de nosso aplicativo móvel, Grain Pixel.',
+  collectionUseText2: 'O aplicativo Grain Pixel é um jogo que roda localmente em seu dispositivo. Ele não requer conexão com a internet para seus recursos principais e não possui um sistema de conta de usuário. Nenhuma informação pessoal, como nome, endereço de e-mail ou localização, é coletada ou armazenada por nós.',
+  collectionUseText3: '',
+  usageDataTitle: 'Dados de Uso',
+  usageDataText: 'O aplicativo pode coletar informações não pessoais e anônimas relacionadas ao desempenho e estabilidade (como relatórios de falha), fornecidas automaticamente pelo sistema operacional do seu dispositivo para nos ajudar a melhorar o aplicativo. Esses dados não contêm nenhuma informação pessoal.',
+  linksTitle: 'Links para Outros Sites',
+  linksText1: 'Nosso Serviço pode conter links para outros sites que não são operados por nós. Se você clicar em um link de terceiros, será direcionado para o site desse terceiro. Recomendamos fortemente que você revise a Política de Privacidade de cada site que visitar.',
+  linksText2: 'Não temos controle e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de sites ou serviços de terceiros.',
+  changesTitle: 'Alterações nesta Política de Privacidade',
+  changesText1: 'Podemos atualizar nossa Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página.',
+  changesText2: 'Recomendamos que você revise esta Política de Privacidade periodicamente para quaisquer alterações. As alterações nesta Política de Privacidade são efetivas quando publicadas nesta página.',
+  changesText3: 'Entre em Contato',
+  contactTitle: 'Entre em Contato',
+  contactText: 'Se você tiver alguma dúvida sobre esta Política de Privacidade, pode nos contatar:',
+  email: 'Por e-mail',
+  
   // Lightbox
   lightboxAlt: 'Imagem ampliada',
   
@@ -94,5 +115,6 @@ export const ptBR: LocalizationData = {
   gallery: 'Galeria de imagens',
   trailer: 'Trailer do jogo',
   brand: 'Marca',
-  imageViewer: 'Visualizador de imagem'
+  imageViewer: 'Visualizador de imagem',
+  backToHome: 'Voltar ao Início'
 };

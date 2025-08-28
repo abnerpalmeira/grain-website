@@ -82,6 +82,27 @@ export interface LocalizationData {
   termsOfUse: string;
   contact: string;
   
+  // Privacy Policy
+  privacyPolicyTitle: string;
+  lastUpdated: string;
+  privacyPolicyIntro: string;
+  collectionUseTitle: string;
+  collectionUseText1: string;
+  collectionUseText2: string;
+  collectionUseText3: string;
+  usageDataTitle: string;
+  usageDataText: string;
+  linksTitle: string;
+  linksText1: string;
+  linksText2: string;
+  changesTitle: string;
+  changesText1: string;
+  changesText2: string;
+  changesText3: string;
+  contactTitle: string;
+  contactText: string;
+  email: string;
+  
   // Lightbox
   lightboxAlt: string;
   
@@ -93,6 +114,7 @@ export interface LocalizationData {
   trailer: string;
   brand: string;
   imageViewer: string;
+  backToHome: string;
 }
 
 export type LocaleCode = 'pt-BR' | 'en-US' | 'de' | 'fr' | 'es' | 'it' | 'ja' | 'ko' | 'pl' | 'ru' | 'zh-CN';

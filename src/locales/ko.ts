@@ -84,6 +84,27 @@ export const ko: LocalizationData = {
   termsOfUse: '이용약관',
   contact: '연락처',
   
+  // Privacy Policy
+  privacyPolicyTitle: 'Grain Pixel 개인정보 처리방침',
+  lastUpdated: '최종 업데이트',
+  privacyPolicyIntro: '이 개인정보 처리방침은 당사의 서비스를 이용할 때 귀하의 정보 수집, 사용 및 공개에 대한 정책을 설명하고, 귀하의 개인정보 권리와 법률이 귀하를 보호하는 방법에 대해 알려줍니다.',
+  collectionUseTitle: '개인 데이터 수집 및 사용',
+  collectionUseText1: '당사는 모바일 애플리케이션 Grain Pixel을 통해 개인을 식별할 수 있는 정보를 수집하지 않습니다.',
+  collectionUseText2: 'Grain Pixel 애플리케이션은 귀하의 기기에서 로컬로 실행되는 게임입니다. 핵심 기능에는 인터넷 연결이 필요하지 않으며 사용자 계정 시스템이 없습니다. 이름, 이메일 주소 또는 위치와 같은 개인정보는 당사에 의해 수집되거나 저장되지 않습니다.',
+  collectionUseText3: '',
+  usageDataTitle: '사용 데이터',
+  usageDataText: '애플리케이션은 성능 및 안정성과 관련된 비개인적이고 익명의 정보(크래시 리포트 등)를 수집할 수 있으며, 이는 애플리케이션 개선을 위해 귀하 기기의 운영체제에서 자동으로 제공됩니다. 이 데이터에는 개인정보가 포함되어 있지 않습니다.',
+  linksTitle: '다른 웹사이트로의 링크',
+  linksText1: '당사의 서비스에는 당사가 운영하지 않는 다른 웹사이트로의 링크가 포함될 수 있습니다. 제3자 링크를 클릭하면 해당 제3자의 사이트로 이동합니다. 방문하는 모든 사이트의 개인정보 처리방침을 검토하는 것을 강력히 권장합니다.',
+  linksText2: '당사는 제3자 사이트나 서비스의 콘텐츠, 개인정보 처리방침 또는 관행에 대해 통제권이 없으며 책임을 지지 않습니다.',
+  changesTitle: '이 개인정보 처리방침의 변경',
+  changesText1: '당사는 때때로 개인정보 처리방침을 업데이트할 수 있습니다. 이 페이지에 새로운 개인정보 처리방침을 게시하여 변경사항을 알려드립니다.',
+  changesText2: '변경사항이 있는지 이 개인정보 처리방침을 정기적으로 검토하는 것이 좋습니다. 이 개인정보 처리방침의 변경사항은 이 페이지에 게시된 시점에 효력이 발생합니다.',
+  changesText3: '문의하기',
+  contactTitle: '문의하기',
+  contactText: '이 개인정보 처리방침에 대해 질문이 있으시면 다음 방법으로 문의해 주세요:',
+  email: '이메일로',
+  
   // Lightbox
   lightboxAlt: '확대된 이미지',
   
@@ -94,5 +115,6 @@ export const ko: LocalizationData = {
   gallery: '이미지 갤러리',
   trailer: '게임 트레일러',
   brand: '브랜드',
-  imageViewer: '이미지 뷰어'
+  imageViewer: '이미지 뷰어',
+  backToHome: '홈으로 돌아가기'
 };

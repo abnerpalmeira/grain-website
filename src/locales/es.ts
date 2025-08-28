@@ -84,6 +84,27 @@ export const es: LocalizationData = {
   termsOfUse: 'Términos de Uso',
   contact: 'Contacto',
   
+  // Privacy Policy
+  privacyPolicyTitle: 'Política de Privacidad para Grain Pixel',
+  lastUpdated: 'Última actualización',
+  privacyPolicyIntro: 'Esta Política de Privacidad describe nuestras políticas sobre la recopilación, uso y divulgación de su información cuando utiliza nuestro Servicio y le informa sobre sus derechos de privacidad y cómo la ley lo protege.',
+  collectionUseTitle: 'Recopilación y Uso de Datos Personales',
+  collectionUseText1: 'No recopilamos ninguna información personalmente identificable a través de nuestra aplicación móvil, Grain Pixel.',
+  collectionUseText2: 'La aplicación Grain Pixel es un juego que se ejecuta localmente en su dispositivo. No requiere conexión a Internet para sus funciones principales y no tiene un sistema de cuenta de usuario. No se recopila ni almacena ninguna información personal, como nombre, dirección de correo electrónico o ubicación, por parte nuestra.',
+  collectionUseText3: '',
+  usageDataTitle: 'Datos de Uso',
+  usageDataText: 'La aplicación puede recopilar información no personal y anónima relacionada con el rendimiento y la estabilidad (como informes de fallos), proporcionada automáticamente por el sistema operativo de su dispositivo para ayudarnos a mejorar la aplicación. Estos datos no contienen ninguna información personal.',
+  linksTitle: 'Enlaces a Otros Sitios Web',
+  linksText1: 'Nuestro Servicio puede contener enlaces a otros sitios web que no son operados por nosotros. Si hace clic en un enlace de terceros, será dirigido al sitio de ese tercero. Le recomendamos encarecidamente que revise la Política de Privacidad de cada sitio que visite.',
+  linksText2: 'No tenemos control y no asumimos ninguna responsabilidad por el contenido, las políticas de privacidad o las prácticas de sitios o servicios de terceros.',
+  changesTitle: 'Cambios en esta Política de Privacidad',
+  changesText1: 'Podemos actualizar nuestra Política de Privacidad de vez en cuando. Le notificaremos sobre cualquier cambio publicando la nueva Política de Privacidad en esta página.',
+  changesText2: 'Se le aconseja revisar esta Política de Privacidad periódicamente para cualquier cambio. Los cambios en esta Política de Privacidad son efectivos cuando se publican en esta página.',
+  changesText3: 'Contáctenos',
+  contactTitle: 'Contáctenos',
+  contactText: 'Si tiene alguna pregunta sobre esta Política de Privacidad, puede contactarnos:',
+  email: 'Por correo electrónico',
+  
   // Lightbox
   lightboxAlt: 'Imagen ampliada',
   
@@ -94,5 +115,6 @@ export const es: LocalizationData = {
   gallery: 'Galería de imágenes',
   trailer: 'Trailer del juego',
   brand: 'Marca',
-  imageViewer: 'Visor de imagen'
+  imageViewer: 'Visor de imagen',
+  backToHome: 'Volver al Inicio'
 };

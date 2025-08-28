@@ -84,6 +84,27 @@ export const it: LocalizationData = {
   termsOfUse: 'Termini di Utilizzo',
   contact: 'Contatto',
   
+  // Privacy Policy
+  privacyPolicyTitle: 'Informativa sulla Privacy per Grain Pixel',
+  lastUpdated: 'Ultimo aggiornamento',
+  privacyPolicyIntro: 'Questa Informativa sulla Privacy descrive le nostre politiche sulla raccolta, l\'uso e la divulgazione delle tue informazioni quando utilizzi il nostro Servizio e ti informa sui tuoi diritti alla privacy e su come la legge ti protegge.',
+  collectionUseTitle: 'Raccolta e Uso dei Dati Personali',
+  collectionUseText1: 'Non raccogliamo alcuna informazione personalmente identificabile attraverso la nostra applicazione mobile, Grain Pixel.',
+  collectionUseText2: 'L\'applicazione Grain Pixel è un gioco che funziona localmente sul tuo dispositivo. Non richiede una connessione Internet per le sue funzionalità principali e non ha un sistema di account utente. Nessuna informazione personale, come nome, indirizzo email o posizione, viene raccolta o memorizzata da noi.',
+  collectionUseText3: '',
+  usageDataTitle: 'Dati di Utilizzo',
+  usageDataText: 'L\'applicazione può raccogliere informazioni non personali e anonime relative alle prestazioni e alla stabilità (come rapporti di crash), fornite automaticamente dal sistema operativo del tuo dispositivo per aiutarci a migliorare l\'applicazione. Questi dati non contengono alcuna informazione personale.',
+  linksTitle: 'Link ad Altri Siti Web',
+  linksText1: 'Il nostro Servizio può contenere link ad altri siti web che non sono gestiti da noi. Se clicchi su un link di terze parti, sarai indirizzato al sito di quella terza parte. Ti consigliamo vivamente di rivedere l\'Informativa sulla Privacy di ogni sito che visiti.',
+  linksText2: 'Non abbiamo alcun controllo e non assumiamo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti o servizi di terze parti.',
+  changesTitle: 'Modifiche a questa Informativa sulla Privacy',
+  changesText1: 'Potremmo aggiornare la nostra Informativa sulla Privacy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova Informativa sulla Privacy su questa pagina.',
+  changesText2: 'Ti consigliamo di rivedere questa Informativa sulla Privacy periodicamente per eventuali modifiche. Le modifiche a questa Informativa sulla Privacy sono efficaci quando vengono pubblicate su questa pagina.',
+  changesText3: 'Contattaci',
+  contactTitle: 'Contattaci',
+  contactText: 'Se hai domande su questa Informativa sulla Privacy, puoi contattarci:',
+  email: 'Via email',
+  
   // Lightbox
   lightboxAlt: 'Immagine ingrandita',
   
@@ -94,5 +115,6 @@ export const it: LocalizationData = {
   gallery: 'Galleria immagini',
   trailer: 'Trailer del gioco',
   brand: 'Marca',
-  imageViewer: 'Visualizzatore immagini'
+  imageViewer: 'Visualizzatore immagini',
+  backToHome: 'Torna alla Home'
 };

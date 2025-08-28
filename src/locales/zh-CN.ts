@@ -84,6 +84,27 @@ export const zhCN: LocalizationData = {
   termsOfUse: '使用条款',
   contact: '联系我们',
   
+  // Privacy Policy
+  privacyPolicyTitle: 'Grain Pixel 隐私政策',
+  lastUpdated: '最后更新',
+  privacyPolicyIntro: '本隐私政策描述了我们在您使用我们的服务时收集、使用和披露您的信息的政策，并告知您您的隐私权利以及法律如何保护您。',
+  collectionUseTitle: '个人数据的收集和使用',
+  collectionUseText1: '我们不会通过我们的移动应用程序 Grain Pixel 收集任何个人身份信息。',
+  collectionUseText2: 'Grain Pixel 应用程序是在您设备上本地运行的游戏。它的核心功能不需要互联网连接，也没有用户账户系统。我们不会收集或存储任何个人信息，如姓名、电子邮件地址或位置。',
+  collectionUseText3: '',
+  usageDataTitle: '使用数据',
+  usageDataText: '应用程序可能会收集与性能和稳定性相关的非个人、匿名信息（如崩溃报告），这些信息由您设备的操作系统自动提供，以帮助我们改进应用程序。这些数据不包含任何个人信息。',
+  linksTitle: '其他网站的链接',
+  linksText1: '我们的服务可能包含指向我们未运营的其他网站的链接。如果您点击第三方链接，您将被定向到该第三方的网站。我们强烈建议您查看您访问的每个网站的隐私政策。',
+  linksText2: '我们无法控制也不对任何第三方网站或服务的内容、隐私政策或做法承担责任。',
+  changesTitle: '本隐私政策的变更',
+  changesText1: '我们可能会不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策来通知您任何变更。',
+  changesText2: '建议您定期查看本隐私政策的任何变更。本隐私政策的变更在发布到此页面时生效。',
+  changesText3: '联系我们',
+  contactTitle: '联系我们',
+  contactText: '如果您对本隐私政策有任何疑问，可以通过以下方式联系我们：',
+  email: '通过电子邮件',
+  
   // Lightbox
   lightboxAlt: '放大图片',
   

@@ -84,6 +84,27 @@ export const enUS: LocalizationData = {
   termsOfUse: 'Terms of Use',
   contact: 'Contact',
   
+  // Privacy Policy
+  privacyPolicyTitle: 'Privacy Policy for Grain Pixel',
+  lastUpdated: 'Last updated',
+  privacyPolicyIntro: 'This Privacy Policy describes Our policies on the collection, use, and disclosure of Your information when You use our Service and tells You about Your privacy rights and how the law protects You.',
+  collectionUseTitle: 'Collection and Use of Personal Data',
+  collectionUseText1: 'We do not collect any personally identifiable information through our mobile application, Grain Pixel.',
+  collectionUseText2: 'The Grain Pixel application is a game that runs locally on your device. It does not require an internet connection for its core features and does not have a user account system. No personal information, such as name, email address, or location, is collected or stored by us.',
+  collectionUseText3: '',
+  usageDataTitle: 'Usage Data',
+  usageDataText: 'The application may collect non-personal, anonymous information related to performance and stability (such as crash reports), provided automatically by your device\'s operating system to help us improve the application. This data does not contain any personal information.',
+  linksTitle: 'Links to Other Websites',
+  linksText1: 'Our Service may contain links to other websites that are not operated by us. If You click on a third-party link, You will be directed to that third party\'s site. We strongly advise You to review the Privacy Policy of every site You visit.',
+  linksText2: 'We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.',
+  changesTitle: 'Changes to this Privacy Policy',
+  changesText1: 'We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.',
+  changesText2: 'You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.',
+  changesText3: 'Contact Us',
+  contactTitle: 'Contact Us',
+  contactText: 'If you have any questions about this Privacy Policy, You can contact us:',
+  email: 'By email',
+  
   // Lightbox
   lightboxAlt: 'Enlarged image',
   
@@ -94,5 +115,6 @@ export const enUS: LocalizationData = {
   gallery: 'Image gallery',
   trailer: 'Game trailer',
   brand: 'Brand',
-  imageViewer: 'Image viewer'
+  imageViewer: 'Image viewer',
+  backToHome: 'Back to Home'
 };

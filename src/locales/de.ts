@@ -84,6 +84,27 @@ export const de: LocalizationData = {
   termsOfUse: 'Nutzungsbedingungen',
   contact: 'Kontakt',
   
+  // Privacy Policy
+  privacyPolicyTitle: 'Datenschutzrichtlinie für Grain Pixel',
+  lastUpdated: 'Zuletzt aktualisiert',
+  privacyPolicyIntro: 'Diese Datenschutzrichtlinie beschreibt unsere Richtlinien zur Erhebung, Verwendung und Offenlegung Ihrer Informationen, wenn Sie unseren Service nutzen, und informiert Sie über Ihre Datenschutzrechte und wie das Gesetz Sie schützt.',
+  collectionUseTitle: 'Erhebung und Verwendung personenbezogener Daten',
+  collectionUseText1: 'Wir erheben keine personenbezogenen Daten über unsere mobile Anwendung Grain Pixel.',
+  collectionUseText2: 'Die Grain Pixel-Anwendung ist ein Spiel, das lokal auf Ihrem Gerät läuft. Es benötigt keine Internetverbindung für seine Kernfunktionen und hat kein Benutzerkontosystem. Keine persönlichen Informationen wie Name, E-Mail-Adresse oder Standort werden von uns gesammelt oder gespeichert.',
+  collectionUseText3: '',
+  usageDataTitle: 'Nutzungsdaten',
+  usageDataText: 'Die Anwendung kann nicht-personenbezogene, anonyme Informationen sammeln, die sich auf Leistung und Stabilität beziehen (wie Absturzberichte), die automatisch vom Betriebssystem Ihres Geräts bereitgestellt werden, um uns bei der Verbesserung der Anwendung zu helfen. Diese Daten enthalten keine persönlichen Informationen.',
+  linksTitle: 'Links zu anderen Websites',
+  linksText1: 'Unser Service kann Links zu anderen Websites enthalten, die nicht von uns betrieben werden. Wenn Sie auf einen Link eines Drittanbieters klicken, werden Sie zu der Website dieses Drittanbieters weitergeleitet. Wir raten Ihnen dringend, die Datenschutzrichtlinie jeder Website zu überprüfen, die Sie besuchen.',
+  linksText2: 'Wir haben keine Kontrolle über und übernehmen keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter.',
+  changesTitle: 'Änderungen dieser Datenschutzrichtlinie',
+  changesText1: 'Wir können unsere Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über alle Änderungen informieren, indem wir die neue Datenschutzrichtlinie auf dieser Seite veröffentlichen.',
+  changesText2: 'Es wird empfohlen, diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen. Änderungen dieser Datenschutzrichtlinie sind wirksam, wenn sie auf dieser Seite veröffentlicht werden.',
+  changesText3: 'Kontakt',
+  contactTitle: 'Kontakt',
+  contactText: 'Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, können Sie uns kontaktieren:',
+  email: 'Per E-Mail',
+  
   // Lightbox
   lightboxAlt: 'Vergrößertes Bild',
   
@@ -94,5 +115,6 @@ export const de: LocalizationData = {
   gallery: 'Bildergalerie',
   trailer: 'Spiel-Trailer',
   brand: 'Marke',
-  imageViewer: 'Bildbetrachter'
+  imageViewer: 'Bildbetrachter',
+  backToHome: 'Zurück zur Startseite'
 };

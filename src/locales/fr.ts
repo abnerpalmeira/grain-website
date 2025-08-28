@@ -84,6 +84,27 @@ export const fr: LocalizationData = {
   termsOfUse: 'Conditions d\'utilisation',
   contact: 'Contact',
   
+  // Privacy Policy
+  privacyPolicyTitle: 'Politique de confidentialité pour Grain Pixel',
+  lastUpdated: 'Dernière mise à jour',
+  privacyPolicyIntro: 'Cette Politique de confidentialité décrit nos politiques concernant la collecte, l\'utilisation et la divulgation de vos informations lorsque vous utilisez notre Service et vous informe de vos droits à la vie privée et de la façon dont la loi vous protège.',
+  collectionUseTitle: 'Collecte et utilisation des données personnelles',
+  collectionUseText1: 'Nous ne collectons aucune information personnellement identifiable via notre application mobile, Grain Pixel.',
+  collectionUseText2: 'L\'application Grain Pixel est un jeu qui fonctionne localement sur votre appareil. Elle ne nécessite pas de connexion Internet pour ses fonctionnalités principales et n\'a pas de système de compte utilisateur. Aucune information personnelle, telle que nom, adresse e-mail ou localisation, n\'est collectée ou stockée par nous.',
+  collectionUseText3: '',
+  usageDataTitle: 'Données d\'utilisation',
+  usageDataText: 'L\'application peut collecter des informations non personnelles et anonymes liées aux performances et à la stabilité (telles que les rapports de plantage), fournies automatiquement par le système d\'exploitation de votre appareil pour nous aider à améliorer l\'application. Ces données ne contiennent aucune information personnelle.',
+  linksTitle: 'Liens vers d\'autres sites Web',
+  linksText1: 'Notre Service peut contenir des liens vers d\'autres sites Web qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez dirigé vers le site de ce tiers. Nous vous conseillons fortement de consulter la Politique de confidentialité de chaque site que vous visitez.',
+  linksText2: 'Nous n\'avons aucun contrôle et n\'assumons aucune responsabilité pour le contenu, les politiques de confidentialité ou les pratiques de sites ou services tiers.',
+  changesTitle: 'Modifications de cette Politique de confidentialité',
+  changesText1: 'Nous pouvons mettre à jour notre Politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de confidentialité sur cette page.',
+  changesText2: 'Il vous est conseillé de consulter cette Politique de confidentialité périodiquement pour tout changement. Les modifications de cette Politique de confidentialité sont effectives lorsqu\'elles sont publiées sur cette page.',
+  changesText3: 'Contactez-nous',
+  contactTitle: 'Contactez-nous',
+  contactText: 'Si vous avez des questions concernant cette Politique de confidentialité, vous pouvez nous contacter :',
+  email: 'Par e-mail',
+  
   // Lightbox
   lightboxAlt: 'Image agrandie',
   
@@ -94,5 +115,6 @@ export const fr: LocalizationData = {
   gallery: 'Galerie d\'images',
   trailer: 'Bande-annonce du jeu',
   brand: 'Marque',
-  imageViewer: 'Visionneuse d\'image'
+  imageViewer: 'Visionneuse d\'image',
+  backToHome: 'Retour à l\'Accueil'
 };
