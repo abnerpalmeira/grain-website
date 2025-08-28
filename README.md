@@ -1,145 +1,197 @@
-# Sistema de Localização - Grain Website
+# Grain Pixel Website
 
-Este projeto implementa um sistema completo de localização para o site do Grain Pixel, permitindo suporte a múltiplos idiomas.
+A modern React-based website for Grain Pixel - Fun with Particles, featuring comprehensive internationalization support.
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- **Suporte a múltiplos idiomas**: Português (pt-BR) e Inglês (en-US)
-- **Seletor de idioma visual**: Botões com bandeiras para alternar entre idiomas
-- **Persistência de preferência**: Lembra a escolha do usuário usando localStorage
-- **Tradução automática**: Todos os textos, atributos alt, placeholders e labels são traduzidos
-- **Meta tags dinâmicas**: Título e descrição da página são atualizados automaticamente
+- **Modern React Architecture**: Built with React 18, TypeScript, and Vite
+- **Comprehensive Localization**: Support for 11 languages with organized locale files
+- **Responsive Design**: Mobile-first approach with modern CSS
+- **Type Safety**: Full TypeScript implementation
+- **Performance Optimized**: Fast development and build times with Vite
 
-## 📁 Estrutura dos Arquivos
+## 🌍 Supported Languages
 
-- `main.html` - Arquivo principal com atributos de localização
-- `locales.js` - Sistema de tradução e gerenciamento de idiomas
+- 🇧🇷 Portuguese (Brazil) - `pt-BR`
+- 🇺🇸 English (US) - `en-US`
+- 🇩🇪 German - `de`
+- 🇫🇷 French - `fr`
+- 🇪🇸 Spanish - `es`
+- 🇮🇹 Italian - `it`
+- 🇯🇵 Japanese - `ja`
+- 🇰🇷 Korean - `ko`
+- 🇵🇱 Polish - `pl`
+- 🇷🇺 Russian - `ru`
+- 🇨🇳 Chinese (Simplified) - `zh-CN`
 
-## 🔧 Como Usar
+## 🏗️ Project Structure
 
-### 1. Adicionar Novos Textos
-
-Para adicionar um novo texto traduzível, use os atributos `data-i18n`:
-
-```html
-<!-- Texto simples -->
-<h1 data-i18n="heroTitle">Título do Herói</h1>
-
-<!-- Placeholder -->
-<input data-i18n-placeholder="emailPlaceholder" placeholder="seu@email.com">
-
-<!-- Alt text -->
-<img data-i18n-alt="imageAlt" alt="Descrição da imagem">
-
-<!-- Aria-label -->
-<div data-i18n-aria-label="sectionLabel" aria-label="Rótulo da seção">
+```
+src/
+├── components/          # React components
+│   ├── Header.tsx      # Navigation header with language switcher
+│   ├── Hero.tsx        # Hero section with video background
+│   ├── About.tsx       # About section with localized gallery
+│   ├── Features.tsx    # Features grid
+│   ├── Trailer.tsx     # Trailer and download section
+│   ├── Roadmap.tsx     # Development roadmap
+│   ├── Footer.tsx      # Footer with links
+│   ├── Lightbox.tsx    # Image lightbox component
+│   └── LanguageSwitcher.tsx # Language selection dropdown
+├── contexts/           # React contexts
+│   └── LocalizationContext.tsx # Localization state management
+├── locales/            # Localization files
+│   ├── index.ts        # Main locale exports
+│   ├── pt-BR.ts        # Portuguese (Brazil)
+│   ├── en-US.ts        # English (US)
+│   ├── de.ts           # German
+│   ├── fr.ts           # French
+│   ├── es.ts           # Spanish
+│   ├── it.ts           # Italian
+│   ├── ja.ts           # Japanese
+│   ├── ko.ts           # Korean
+│   ├── pl.ts           # Polish
+│   ├── ru.ts           # Russian
+│   └── zh-CN.ts        # Chinese (Simplified)
+├── types/              # TypeScript type definitions
+│   └── localization.ts # Localization interface types
+├── styles/             # CSS files
+│   └── global.css      # Global styles
+├── assets/             # Static assets (images, icons)
+├── App.tsx             # Main application component
+└── main.tsx            # Application entry point
 ```
 
-### 2. Adicionar Novas Traduções
+## 🛠️ Development
 
-No arquivo `locales.js`, adicione as chaves de tradução:
+### Prerequisites
 
-```javascript
-const locales = {
-  'pt-BR': {
-    // ... outras traduções
-    novaChave: 'Texto em português',
-  },
-  'en-US': {
-    // ... outras traduções
-    novaChave: 'Text in English',
-  }
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### Development Server
+
+The development server runs on `http://localhost:3000` and includes:
+- Hot Module Replacement (HMR)
+- TypeScript compilation
+- CSS hot reloading
+- Source maps for debugging
+
+## 🌐 Localization System
+
+### Adding New Languages
+
+1. Create a new locale file in `src/locales/` (e.g., `nl.ts` for Dutch)
+2. Implement the `LocalizationData` interface
+3. Add the locale to the `locales` and `localeInfo` objects in `src/locales/index.ts`
+4. Update the `LocaleCode` type in `src/types/localization.ts`
+
+### Localization Context
+
+The `LocalizationContext` provides:
+- Current locale state
+- Language switching functionality
+- Translation function (`t()`)
+- Access to current locale data
+- Automatic localStorage persistence
+
+### Usage in Components
+
+```tsx
+import { useLocalization } from '@/contexts/LocalizationContext';
+
+const MyComponent = () => {
+  const { t, currentLocale, setLocale } = useLocalization();
+  
+  return (
+    <div>
+      <h1>{t('title')}</h1>
+      <p>Current language: {currentLocale}</p>
+      <button onClick={() => setLocale('en-US')}>
+        Switch to English
+      </button>
+    </div>
+  );
 };
 ```
 
-### 3. Adicionar Novos Idiomas
+## 🎨 Styling
 
-Para adicionar um novo idioma (ex: espanhol):
+- **CSS Custom Properties**: Consistent design tokens
+- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
+- **Modern CSS**: Uses latest CSS features like `clamp()`, `aspect-ratio`, etc.
+- **Pixel Art Aesthetic**: Maintains the game's retro visual style
 
-```javascript
-const locales = {
-  // ... idiomas existentes
-  'es-ES': {
-    title: 'Grain Pixel — Diversión con Partículas',
-    description: 'Grain Pixel es un sandbox de partículas en pixel art...',
-    // ... todas as outras traduções
-  }
-};
-```
+## 📱 Responsive Features
 
-E adicione o botão no seletor de idioma:
+- Mobile-first design approach
+- Responsive grid layouts
+- Touch-friendly interactions
+- Optimized for various screen sizes
 
-```javascript
-createLanguageSwitcher() {
-  // ... código existente
-  languageSwitcher.innerHTML = `
-    <button class="lang-btn" data-locale="pt-BR">🇧🇷</button>
-    <button class="lang-btn" data-locale="en-US">🇺🇸</button>
-    <button class="lang-btn" data-locale="es-ES">🇪🇸</button>
-  `;
-}
-```
+## 🚀 Performance Features
 
-## 🎨 Personalização
+- **Vite**: Fast development and build times
+- **Code Splitting**: Automatic code splitting for optimal loading
+- **Tree Shaking**: Unused code elimination
+- **Source Maps**: Development debugging support
 
-### Estilos do Seletor de Idioma
+## 🔧 Build Configuration
 
-Os estilos do seletor de idioma são definidos dinamicamente no JavaScript. Para personalizar:
+### Vite Configuration
+- React plugin for JSX support
+- Path aliases for clean imports
+- Development server configuration
+- Build optimization settings
 
-```javascript
-// Em createLanguageSwitcher()
-style.textContent = `
-  .language-switcher {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-  .lang-btn {
-    /* Seus estilos personalizados */
-  }
-`;
-```
+### TypeScript Configuration
+- Strict type checking
+- Path mapping for clean imports
+- Modern ES2020 target
+- React JSX support
 
-### Badge de Wishlist
+## 📦 Scripts
 
-O texto "Wishlist" é atualizado dinamicamente usando CSS custom properties:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run linting (when configured)
 
-```css
-.store-badges .soon::after {
-  content: var(--wishlist-text, "Wishlist");
-  /* ... outros estilos */
-}
-```
+## 🌟 Key Benefits of the Refactor
 
-## 🔄 Como Funciona
+1. **Maintainability**: Clean component separation and TypeScript types
+2. **Scalability**: Easy to add new features and languages
+3. **Performance**: Modern build tools and optimized React patterns
+4. **Developer Experience**: Hot reloading, TypeScript, and organized code structure
+5. **Accessibility**: Proper ARIA labels and semantic HTML
+6. **Internationalization**: Comprehensive multi-language support
 
-1. **Inicialização**: O `LocalizationManager` é criado quando a página carrega
-2. **Detecção de idioma**: Verifica se há um idioma salvo no localStorage
-3. **Aplicação de traduções**: Atualiza todos os elementos com atributos `data-i18n`
-4. **Seletor visual**: Cria botões para alternar entre idiomas
-5. **Persistência**: Salva a escolha do usuário para futuras visitas
+## 🔄 Migration from Original
 
-## 📱 Responsividade
+The original HTML/CSS/JavaScript implementation has been completely refactored to:
+- React components with proper state management
+- TypeScript for type safety
+- Organized localization system
+- Modern build tooling
+- Component-based architecture
+- Improved maintainability and scalability
 
-O seletor de idioma é responsivo e se adapta ao layout existente do header. Os estilos são compatíveis com o design system atual do site.
+## 📄 License
 
-## 🚀 Próximos Passos
-
-- [ ] Adicionar mais idiomas (espanhol, francês, etc.)
-- [ ] Implementar detecção automática de idioma do navegador
-- [ ] Adicionar animações de transição entre idiomas
-- [ ] Implementar fallback para textos não traduzidos
-- [ ] Adicionar suporte a RTL (direita para esquerda)
-
-## 🤝 Contribuição
-
-Para contribuir com novas traduções ou melhorias no sistema:
-
-1. Adicione as traduções no arquivo `locales.js`
-2. Atualize o HTML com os atributos `data-i18n` apropriados
-3. Teste a funcionalidade em diferentes idiomas
-4. Mantenha a consistência com o padrão existente
-
-## 📄 Licença
-
-Este sistema de localização é parte do projeto Grain Website e segue as mesmas diretrizes de licenciamento.
+ISC License - see package.json for details
