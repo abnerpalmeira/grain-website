@@ -70,11 +70,12 @@ export const zhCN: LocalizationData = {
   // Roadmap section
   roadmapTitle: '路线图',
   now: '现在',
+  coming: '即将推出',
   future: '未来',
   acidTitle: '新元素：酸',
-  acidDesc: '与沙子、石头和水的相互作用 + 闪亮的视觉效果。',
-  editorTitle: '场景编辑器',
-  editorDesc: '构建你的生物群系，保存并分享动画截图。',
+  acidDesc: '发现这个强大的新元素能腐蚀什么。',
+  mapsTitle: '两张新地图',
+  mapsDesc: '两张令人难以置信的新地图正在制作中，具有独特的环境和挑战。',
   pcTitle: 'PC版本',
   pcDesc: '输入改进、性能和轻量模组。',
   

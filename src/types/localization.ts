@@ -68,11 +68,12 @@ export interface LocalizationData {
   // Roadmap section
   roadmapTitle: string;
   now: string;
+  coming: string;
   future: string;
   acidTitle: string;
   acidDesc: string;
-  editorTitle: string;
-  editorDesc: string;
+  mapsTitle: string;
+  mapsDesc: string;
   pcTitle: string;
   pcDesc: string;
   

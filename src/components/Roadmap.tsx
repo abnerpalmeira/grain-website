@@ -11,9 +11,9 @@ export const Roadmap: React.FC = () => {
       description: 'acidDesc'
     },
     {
-      badge: 'wishlist',
-      title: 'editorTitle',
-      description: 'editorDesc'
+      badge: 'coming',
+      title: 'mapsTitle',
+      description: 'mapsDesc'
     },
     {
       badge: 'future',
@@ -31,7 +31,7 @@ export const Roadmap: React.FC = () => {
             <div key={index} className="road-item">
               <span 
                 className="badge" 
-                style={item.badge === 'wishlist' 
+                style={item.badge === 'coming' 
                   ? { background: 'var(--accent)', color: '#3a2402', borderColor: '#7a540d' }
                   : item.badge === 'future'
                   ? { background: '#9fb2d7', color: '#0b1736', borderColor: '#5b6e95' }

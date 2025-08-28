@@ -70,11 +70,12 @@ export const de: LocalizationData = {
   // Roadmap section
   roadmapTitle: 'Roadmap',
   now: 'Jetzt',
+  coming: 'Demnächst',
   future: 'Zukunft',
   acidTitle: 'Neues Element: Säure',
-  acidDesc: 'Interaktionen mit Sand, Stein und Wasser + brillante visuelle Effekte.',
-  editorTitle: 'Szenario-Editor',
-  editorDesc: 'Baue dein Biom, speichere und teile animierte Aufnahmen.',
+  acidDesc: 'Entdecke, was du mit diesem mächtigen neuen Element korrodieren kannst.',
+  mapsTitle: 'Zwei Neue Karten',
+  mapsDesc: 'Zwei unglaubliche neue Karten werden mit einzigartigen Umgebungen und Herausforderungen erstellt.',
   pcTitle: 'PC-Version',
   pcDesc: 'Input-Verbesserungen, Performance und leichte Mods.',
   

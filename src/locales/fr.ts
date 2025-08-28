@@ -70,11 +70,12 @@ export const fr: LocalizationData = {
   // Roadmap section
   roadmapTitle: 'Feuille de route',
   now: 'Maintenant',
+  coming: 'Bientôt',
   future: 'Avenir',
   acidTitle: 'Nouvel élément: Acide',
-  acidDesc: 'Interactions avec le sable, la pierre et l\'eau + effets visuels brillants.',
-  editorTitle: 'Éditeur de scénarios',
-  editorDesc: 'Construisez votre biome, sauvegardez et partagez des captures animées.',
+  acidDesc: 'Découvrez ce que vous pouvez corroder avec ce puissant nouvel élément.',
+  mapsTitle: 'Deux Nouvelles Cartes',
+  mapsDesc: 'Deux cartes incroyables sont en cours de création avec des environnements uniques et des défis.',
   pcTitle: 'Version PC',
   pcDesc: 'Améliorations d\'entrée, performance et mods légers.',
   

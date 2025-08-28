@@ -70,11 +70,12 @@ export const ko: LocalizationData = {
   // Roadmap section
   roadmapTitle: '로드맵',
   now: '현재',
+  coming: '예정',
   future: '미래',
   acidTitle: '새 요소: 산성',
-  acidDesc: '모래, 돌, 물과의 상호작용 + 빛나는 시각 효과.',
-  editorTitle: '시나리오 에디터',
-  editorDesc: '바이옴을 구축하고, 애니메이션 캡처를 저장하고 공유하세요.',
+  acidDesc: '이 강력한 새로운 요소로 무엇을 부식시킬 수 있는지 발견하세요.',
+  mapsTitle: '두 개의 새로운 맵',
+  mapsDesc: '고유한 환경과 도전을 가진 두 개의 놀라운 새로운 맵이 제작 중입니다.',
   pcTitle: 'PC 버전',
   pcDesc: '입력 개선, 성능, 가벼운 모드.',
   

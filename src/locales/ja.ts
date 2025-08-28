@@ -70,11 +70,12 @@ export const ja: LocalizationData = {
   // Roadmap section
   roadmapTitle: 'ロードマップ',
   now: '現在',
+  coming: '近日公開',
   future: '将来',
   acidTitle: '新要素：酸',
-  acidDesc: '砂、石、水との相互作用 + 輝く視覚効果。',
-  editorTitle: 'シナリオエディター',
-  editorDesc: 'バイオームを構築し、アニメーションキャプチャを保存・共有。',
+  acidDesc: '何を腐食できるか発見してください。',
+  mapsTitle: '2つの新しいマップ',
+  mapsDesc: 'ユニークな環境とチャレンジを持つ2つの素晴らしい新しいマップが制作中です。',
   pcTitle: 'PC版',
   pcDesc: '入力の改善、パフォーマンス、軽量モッド。',
   

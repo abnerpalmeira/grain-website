@@ -70,11 +70,12 @@ export const ptBR: LocalizationData = {
   // Roadmap section
   roadmapTitle: 'Roadmap',
   now: 'Agora',
+  coming: 'Em Breve',
   future: 'Futuro',
   acidTitle: 'Novo Elemento: Ácido',
-  acidDesc: 'Interações com areia, pedra e água + efeitos visuais brilhantes.',
-  editorTitle: 'Editor de Cenários',
-  editorDesc: 'Monte seu bioma, salve e compartilhe capturas animadas.',
+  acidDesc: 'Descubra o que você pode corroer com este poderoso novo elemento.',
+  mapsTitle: 'Dois Novos Mapas',
+  mapsDesc: 'Dois mapas incríveis estão sendo criados com ambientes únicos e desafios.',
   pcTitle: 'Versão PC',
   pcDesc: 'Aprimoramentos de input, performance e mods leves.',
   

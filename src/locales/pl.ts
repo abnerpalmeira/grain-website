@@ -70,11 +70,12 @@ export const pl: LocalizationData = {
   // Roadmap section
   roadmapTitle: 'Mapa Drogowa',
   now: 'Teraz',
+  coming: 'Wkrótce',
   future: 'Przyszłość',
   acidTitle: 'Nowy Element: Kwas',
-  acidDesc: 'Interakcje z piaskiem, kamieniem i wodą + błyszczące efekty wizualne.',
-  editorTitle: 'Edytor Scenariuszy',
-  editorDesc: 'Zbuduj swój biom, zapisz i udostępnij animowane przechwyty.',
+  acidDesc: 'Odkryj, co możesz skorodować tym potężnym nowym elementem.',
+  mapsTitle: 'Dwie Nowe Mapy',
+  mapsDesc: 'Dwie niesamowite nowe mapy są tworzone z unikalnymi środowiskami i wyzwaniami.',
   pcTitle: 'Wersja PC',
   pcDesc: 'Ulepszenia wejścia, wydajność i lekkie mody.',
   
