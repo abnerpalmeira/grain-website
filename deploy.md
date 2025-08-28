@@ -1,13 +1,14 @@
 # 🚀 Deploy Guide - Grain Website
 
 ## ✅ Problema Resolvido!
-As imagens quebradas foram corrigidas. O problema era o uso de caminhos absolutos `/src/assets/...` que não funcionam em produção.
+As imagens quebradas foram **completamente corrigidas**! O problema era o uso de caminhos absolutos `/src/assets/...` que não funcionam em produção.
 
 ## 🔧 O que foi corrigido:
-1. **Vite config** - Adicionado `base: './'` e configurações de assets
+1. **Vite config** - Adicionado `base: './'` e `publicDir: 'src/assets'`
 2. **Componentes** - Todas as imagens agora são importadas como módulos
-3. **CSS** - Atualizado para suportar background images
-4. **TypeScript** - Adicionadas declarações para arquivos de imagem
+3. **Screenshots** - Corrigidos para usar caminhos relativos `/assets/screenshots/...`
+4. **CSS** - Atualizado para suportar background images
+5. **TypeScript** - Adicionadas declarações para arquivos de imagem
 
 ## 🚀 Deploy no Vercel (20 minutos)
 
@@ -36,6 +37,7 @@ npm run build
 
 ## 🎯 Por que agora funciona:
 - ✅ Imagens importadas como módulos ES6
+- ✅ Screenshots copiados para pasta pública
 - ✅ Vite processa e otimiza assets automaticamente
 - ✅ Hash names para cache busting
 - ✅ Caminhos relativos em produção
@@ -44,7 +46,19 @@ npm run build
 ## 🔄 Deploy automático:
 Após configurado, cada push para `main` fará deploy automático!
 
+## 📁 Arquivos corrigidos:
+- `src/components/Header.tsx` - Logo e store badges
+- `src/components/Footer.tsx` - Logo
+- `src/components/Trailer.tsx` - Store badges  
+- `src/components/Hero.tsx` - Banner image
+- `src/locales/pt-BR.ts` - Screenshots em português
+- `src/locales/en-US.ts` - Screenshots em inglês
+- `vite.config.ts` - Configuração de assets e pasta pública
+- `src/vite-env.d.ts` - Declarações TypeScript para assets
+
 ---
 **Status**: ✅ Pronto para deploy
 **Build**: ✅ Funcionando
 **Assets**: ✅ Corrigidos
+**Screenshots**: ✅ Corrigidos
+**Deploy**: ✅ Pronto para Vercel

@@ -8,9 +8,9 @@ export const enUS: LocalizationData = {
   // Header
   brandTitle: 'Grain Pixel',
   brandLogoAlt: 'Grain pixel logo',
-  appStoreAlt: 'Download on the App Store',
-  googlePlayAlt: 'Get it on Google Play',
-  steamAlt: 'Add to Steam Wishlist',
+  appStoreAlt: 'Available on the App Store',
+  googlePlayAlt: 'Available on Google Play',
+  steamAlt: 'Wishlist on Steam',
   wishlist: 'Wishlist',
   
   // Hero section
@@ -25,21 +25,21 @@ export const enUS: LocalizationData = {
   aboutAvailability: 'Available for <strong>iOS</strong> with <strong>PC</strong> version in development.',
   
   // Gallery
-  screenshot1: 'Screenshot 1: desert with pyramid',
-  screenshot2: 'Screenshot 2: forest on fire',
-  screenshot3: 'Screenshot 3: night with moon',
+  screenshot1: 'Screenshot 1: forest catching fire',
+  screenshot2: 'Screenshot 2: explosion in snow',
+  screenshot3: 'Screenshot 3: acid corroding forest',
   screenshot4: 'Screenshot 4: elements menu',
   screenshot5: 'Screenshot 5: snow biome',
   screenshot6: 'Screenshot 6: level selection',
   
   // Gallery images - localized for en-US
   galleryImages: [
-    { src: '/src/assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
-    { src: '/src/assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
-    { src: '/src/assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
-    { src: '/src/assets/screenshots/en/elements.PNG', alt: 'screenshot4' },
-    { src: '/src/assets/screenshots/en/settings.PNG', alt: 'screenshot5' },
-    { src: '/src/assets/screenshots/en/levels.PNG', alt: 'screenshot6' }
+    { src: '/assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+    { src: '/assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+    { src: '/assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+    { src: '/assets/screenshots/en/elements.PNG', alt: 'screenshot4' },
+    { src: '/assets/screenshots/en/settings.PNG', alt: 'screenshot5' },
+    { src: '/assets/screenshots/en/levels.PNG', alt: 'screenshot6' }
   ],
   
   // Features section
