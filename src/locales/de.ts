@@ -34,12 +34,12 @@ export const de: LocalizationData = {
   
   // Gallery images - localized for German
   galleryImages: [
-    { src: '/src/assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
-    { src: '/src/assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
-    { src: '/src/assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
-    { src: '/src/assets/screenshots/de/elements.PNG', alt: 'screenshot4' },
-    { src: '/src/assets/screenshots/de/settings.PNG', alt: 'screenshot5' },
-    { src: '/src/assets/screenshots/de/levels.PNG', alt: 'screenshot6' }
+    { src: '/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+    { src: '/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+    { src: '/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+    { src: '/screenshots/de/elements.PNG', alt: 'screenshot4' },
+    { src: '/screenshots/de/settings.PNG', alt: 'screenshot5' },
+    { src: '/screenshots/de/levels.PNG', alt: 'screenshot6' }
   ],
   
   // Features section

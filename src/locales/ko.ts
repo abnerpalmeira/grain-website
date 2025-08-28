@@ -34,12 +34,12 @@ export const ko: LocalizationData = {
   
   // Gallery images - localized for Korean
   galleryImages: [
-    { src: '/src/assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
-    { src: '/src/assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
-    { src: '/src/assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
-    { src: '/src/assets/screenshots/ko/IMG_0803.PNG', alt: 'screenshot4' },
-    { src: '/src/assets/screenshots/ko/IMG_0804.PNG', alt: 'screenshot5' },
-    { src: '/src/assets/screenshots/ko/IMG_0805.PNG', alt: 'screenshot6' }
+    { src: '/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+    { src: '/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+    { src: '/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+    { src: '/screenshots/ko/IMG_0803.PNG', alt: 'screenshot4' },
+    { src: '/screenshots/ko/IMG_0804.PNG', alt: 'screenshot5' },
+    { src: '/screenshots/ko/IMG_0805.PNG', alt: 'screenshot6' }
   ],
   
   // Features section

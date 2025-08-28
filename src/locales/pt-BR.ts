@@ -34,12 +34,12 @@ export const ptBR: LocalizationData = {
   
   // Gallery images - localized for pt-BR
   galleryImages: [
-    { src: '/assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
-    { src: '/assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
-    { src: '/assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
-    { src: '/assets/screenshots/pt_BR/elements.PNG', alt: 'screenshot4' },
-    { src: '/assets/screenshots/pt_BR/settings.PNG', alt: 'screenshot5' },
-    { src: '/assets/screenshots/pt_BR/levels.PNG', alt: 'screenshot6' }
+    { src: '/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+    { src: '/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+    { src: '/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+    { src: '/screenshots/pt_BR/elements.PNG', alt: 'screenshot4' },
+    { src: '/screenshots/pt_BR/settings.PNG', alt: 'screenshot5' },
+    { src: '/screenshots/pt_BR/levels.PNG', alt: 'screenshot6' }
   ],
   
   // Features section

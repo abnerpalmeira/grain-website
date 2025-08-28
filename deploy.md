@@ -4,9 +4,9 @@
 As imagens quebradas foram **completamente corrigidas**! O problema era o uso de caminhos absolutos `/src/assets/...` que não funcionam em produção.
 
 ## 🔧 O que foi corrigido:
-1. **Vite config** - Adicionado `base: './'` e `publicDir: 'src/assets'`
+1. **Vite config** - Adicionado `base: './'` e configurações de assets
 2. **Componentes** - Todas as imagens agora são importadas como módulos
-3. **Screenshots** - Corrigidos para usar caminhos relativos `/assets/screenshots/...`
+3. **Screenshots** - Corrigidos para **TODOS os idiomas** usando pasta `public/`
 4. **CSS** - Atualizado para suportar background images
 5. **TypeScript** - Adicionadas declarações para arquivos de imagem
 
@@ -37,7 +37,7 @@ npm run build
 
 ## 🎯 Por que agora funciona:
 - ✅ Imagens importadas como módulos ES6
-- ✅ Screenshots copiados para pasta pública
+- ✅ Screenshots copiados para pasta `public/` (padrão Vite)
 - ✅ Vite processa e otimiza assets automaticamente
 - ✅ Hash names para cache busting
 - ✅ Caminhos relativos em produção
@@ -51,14 +51,29 @@ Após configurado, cada push para `main` fará deploy automático!
 - `src/components/Footer.tsx` - Logo
 - `src/components/Trailer.tsx` - Store badges  
 - `src/components/Hero.tsx` - Banner image
-- `src/locales/pt-BR.ts` - Screenshots em português
-- `src/locales/en-US.ts` - Screenshots em inglês
-- `vite.config.ts` - Configuração de assets e pasta pública
+- **Todos os arquivos de idioma** - Screenshots corrigidos:
+  - `pt-BR.ts`, `en-US.ts`, `es.ts`, `fr.ts`, `de.ts`
+  - `it.ts`, `ja.ts`, `ko.ts`, `pl.ts`, `ru.ts`, `zh-CN.ts`
+- `vite.config.ts` - Configuração de assets
 - `src/vite-env.d.ts` - Declarações TypeScript para assets
+- `public/screenshots/` - Pasta com todos os screenshots
+
+## 🌍 Idiomas com screenshots funcionando:
+- 🇧🇷 **Português** - ✅
+- 🇺🇸 **Inglês** - ✅  
+- 🇪🇸 **Espanhol** - ✅
+- 🇫🇷 **Francês** - ✅
+- 🇩🇪 **Alemão** - ✅
+- 🇮🇹 **Italiano** - ✅
+- 🇯🇵 **Japonês** - ✅
+- 🇰🇷 **Coreano** - ✅
+- 🇵🇱 **Polonês** - ✅
+- 🇷🇺 **Russo** - ✅
+- 🇨🇳 **Chinês** - ✅
 
 ---
 **Status**: ✅ Pronto para deploy
 **Build**: ✅ Funcionando
 **Assets**: ✅ Corrigidos
-**Screenshots**: ✅ Corrigidos
+**Screenshots**: ✅ Corrigidos para TODOS os idiomas
 **Deploy**: ✅ Pronto para Vercel

@@ -34,12 +34,12 @@ export const it: LocalizationData = {
   
   // Gallery images - localized for Italian
   galleryImages: [
-    { src: '/src/assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
-    { src: '/src/assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
-    { src: '/src/assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
-    { src: '/src/assets/screenshots/it/IMG_0797.PNG', alt: 'screenshot4' },
-    { src: '/src/assets/screenshots/it/IMG_0798.PNG', alt: 'screenshot5' },
-    { src: '/src/assets/screenshots/it/IMG_0799.PNG', alt: 'screenshot6' }
+    { src: '/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+    { src: '/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+    { src: '/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+    { src: '/screenshots/it/IMG_0797.PNG', alt: 'screenshot4' },
+    { src: '/screenshots/it/IMG_0798.PNG', alt: 'screenshot5' },
+    { src: '/screenshots/it/IMG_0799.PNG', alt: 'screenshot6' }
   ],
   
   // Features section

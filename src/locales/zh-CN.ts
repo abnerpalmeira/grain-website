@@ -34,12 +34,12 @@ export const zhCN: LocalizationData = {
   
   // Gallery images - localized for Chinese
   galleryImages: [
-    { src: '/src/assets/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
-    { src: '/src/assets/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
-    { src: '/src/assets/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
-    { src: '/src/assets/screenshots/zh_CN/IMG_0812.PNG', alt: 'screenshot4' },
-    { src: '/src/assets/screenshots/zh_CN/IMG_0813.PNG', alt: 'screenshot5' },
-    { src: '/src/assets/screenshots/zh_CN/IMG_0814.PNG', alt: 'screenshot6' }
+    { src: '/screenshots/default/IMG_0761.PNG', alt: 'screenshot1' },
+    { src: '/screenshots/default/IMG_0773.PNG', alt: 'screenshot2' },
+    { src: '/screenshots/default/IMG_0823.PNG', alt: 'screenshot3' },
+    { src: '/screenshots/zh_CN/IMG_0812.PNG', alt: 'screenshot4' },
+    { src: '/screenshots/zh_CN/IMG_0813.PNG', alt: 'screenshot5' },
+    { src: '/screenshots/zh_CN/IMG_0814.PNG', alt: 'screenshot6' }
   ],
   
   // Features section
