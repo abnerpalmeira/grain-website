@@ -60,7 +60,7 @@ export const ptBR: LocalizationData = {
   // Trailer section
   trailerTitle: 'Trailer',
   downloadTitle: 'Baixar / Wishlist',
-  downloadText: 'Entre para a lista de desejos no Steam e baixe na App Store quando disponível.',
+  downloadText: 'Entre para a lista de desejos no Steam e baixe na App Store agora.',
   newsletterText: 'Receba novidades por e-mail quando sair uma atualização grande.',
   emailPlaceholder: 'seunome@email.com',
   emailLabel: 'Seu e-mail',

@@ -60,7 +60,7 @@ export const zhCN: LocalizationData = {
   // Trailer section
   trailerTitle: '预告片',
   downloadTitle: '下载 / 愿望单',
-  downloadText: '加入Steam愿望单，在App Store可用时下载。',
+  downloadText: '加入Steam愿望单，现在就在App Store下载。',
   newsletterText: '重大更新发布时通过电子邮件获取更新。',
   emailPlaceholder: '你的名字@email.com',
   emailLabel: '你的邮箱',

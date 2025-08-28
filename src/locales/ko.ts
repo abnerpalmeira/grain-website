@@ -60,7 +60,7 @@ export const ko: LocalizationData = {
   // Trailer section
   trailerTitle: '트레일러',
   downloadTitle: '다운로드 / 위시리스트',
-  downloadText: 'Steam 위시리스트에 참여하고, 이용 가능해지면 App Store에서 다운로드.',
+  downloadText: 'Steam 위시리스트에 참여하고, 지금 App Store에서 다운로드.',
   newsletterText: '주요 업데이트가 출시되면 이메일로 알려드립니다.',
   emailPlaceholder: '당신의이름@email.com',
   emailLabel: '당신의 이메일',

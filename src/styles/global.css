@@ -156,6 +156,23 @@ header {
   letter-spacing: 0.2px;
 }
 
+.store-badges .coming-soon::after {
+  content: "Coming Soon";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--accent);
+  color: #3a2402;
+  font-weight: 800;
+  border: 2px solid #7a540d;
+  border-radius: 8px;
+  padding: 2px 4px;
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  line-height: 1;
+}
+
 @media (max-width: 720px) {
   .store-badges img {
     height: 40px;

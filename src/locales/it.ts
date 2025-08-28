@@ -60,7 +60,7 @@ export const it: LocalizationData = {
   // Trailer section
   trailerTitle: 'Trailer',
   downloadTitle: 'Scarica / Lista dei Desideri',
-  downloadText: 'Unisciti alla lista dei desideri Steam e scarica da App Store quando disponibile.',
+  downloadText: 'Unisciti alla lista dei desideri Steam e scarica da App Store ora.',
   newsletterText: 'Ricevi aggiornamenti via email quando vengono rilasciati aggiornamenti importanti.',
   emailPlaceholder: 'tuonome@email.com',
   emailLabel: 'La tua email',

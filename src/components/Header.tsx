@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
         </a>
         
         <div className="store-badges" aria-label={t('stores')}>
-          <a href="#download" aria-label={t('appStoreAlt')}>
+          <a href="https://apps.apple.com/us/app/grain-pixel/id6751121773" aria-label={t('appStoreAlt')}>
             <img 
               src="/src/assets/app-store.png" 
               alt={t('appStoreAlt')} 
@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
               loading="eager"
             />
           </a>
-          <a href="#download" aria-label={t('googlePlayAlt')}>
+          <a href="#download" className="coming-soon" aria-label={t('googlePlayAlt')}>
             <img 
               src="/src/assets/google-play.png" 
               alt={t('googlePlayAlt')} 

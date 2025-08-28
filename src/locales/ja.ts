@@ -60,7 +60,7 @@ export const ja: LocalizationData = {
   // Trailer section
   trailerTitle: 'トレーラー',
   downloadTitle: 'ダウンロード / ウィッシュリスト',
-  downloadText: 'Steamウィッシュリストに参加し、利用可能になったらApp Storeからダウンロード。',
+  downloadText: 'Steamウィッシュリストに参加し、今すぐApp Storeからダウンロード。',
   newsletterText: '重要なアップデートがリリースされたらメールでお知らせ。',
   emailPlaceholder: 'あなたの名前@email.com',
   emailLabel: 'あなたのメール',

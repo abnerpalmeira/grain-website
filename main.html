@@ -59,6 +59,12 @@
       border:2px solid #7a540d; border-radius:8px; padding:2px 6px;
       font-size:11px; letter-spacing:.2px;
     }
+    .store-badges .coming-soon::after{
+      content:"Coming Soon"; position:absolute; top:-8px; right:-8px;
+      background:var(--accent); color:#3a2402; font-weight:800;
+      border:2px solid #7a540d; border-radius:8px; padding:2px 4px;
+      font-size:10px; letter-spacing:.1px; white-space:nowrap; line-height:1;
+    }
     @media (max-width:720px){ .store-badges img{height:40px} }
 
     /* HERO */
@@ -128,10 +134,10 @@
         <span class="brand-title" data-i18n="brandTitle">Grain Pixel</span>
       </a>
       <div class="store-badges" data-i18n-aria-label="stores" aria-label="Lojas">
-        <a href="#download" data-i18n-aria-label="appStoreAlt" aria-label="Baixar na App Store">
+        <a href="https://apps.apple.com/us/app/grain-pixel/id6751121773" data-i18n-aria-label="appStoreAlt" aria-label="Baixar na App Store">
           <img src="assets/app-store.png" data-i18n-alt="appStoreAlt" alt="Disponível na App Store" width="180" height="54" loading="eager">
         </a>
-        <a href="#download" data-i18n-aria-label="googlePlayAlt" aria-label="Baixar no Google Play">
+        <a href="#download" class="coming-soon" data-i18n-aria-label="googlePlayAlt" aria-label="Baixar no Google Play">
           <img src="assets/google-play.png" data-i18n-alt="googlePlayAlt" alt="Disponível no Google Play" width="180" height="54" loading="eager">
         </a>
         <a href="#steam" class="soon" data-i18n-aria-label="steamAlt" aria-label="Wishlist no Steam">
@@ -240,22 +246,16 @@
         <p data-i18n="downloadText">Entre para a lista de desejos no Steam e baixe na App Store quando disponível.</p>
 
         <div class="store-badges" style="margin-top:10px">
-          <a href="#" aria-label="Baixar na App Store">
+          <a href="https://apps.apple.com/us/app/grain-pixel/id6751121773" aria-label="Baixar na App Store">
             <img src="assets/app-store.png" alt="Baixar na App Store" width="180" height="54" loading="lazy">
           </a>
-          <a href="#" aria-label="Baixar no Google Play">
+          <a href="#" class="coming-soon" aria-label="Baixar no Google Play">
             <img src="assets/google-play.png" alt="Baixar no Google Play" width="180" height="54" loading="lazy">
           </a>
           <a href="#steam" class="soon" aria-label="Adicionar à wishlist no Steam">
             <img src="assets/steam.png" alt="Wishlist no Steam" width="180" height="54" loading="lazy">
           </a>
         </div>
-        <p style="margin-top:14px;color:var(--muted);font-size:14px" data-i18n="newsletterText">Receba novidades por e-mail quando sair uma atualização grande.</p>
-        <form class="newsletter" onsubmit="event.preventDefault();alert(locales[document.documentElement.lang || 'pt-BR'].subscribeSuccess);">
-          <label for="email" class="sr-only" data-i18n="emailLabel">Seu e-mail</label>
-          <input id="email" name="email" type="email" required data-i18n-placeholder="emailPlaceholder" placeholder="seunome@email.com" data-i18n-aria-label="emailLabel" aria-label="Seu e-mail" style="width:100%;padding:14px 12px;border-radius:10px;border:2px solid #1a2e63;background:#0b1736;color:var(--text);margin-bottom:10px">
-          <button class="btn" type="submit" style="width:100%" data-i18n="subscribeBtn">Quero ser avisado</button>
-        </form>
       </div>
     </div>
   </section>

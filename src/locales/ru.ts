@@ -60,7 +60,7 @@ export const ru: LocalizationData = {
   // Trailer section
   trailerTitle: 'Трейлер',
   downloadTitle: 'Скачать / Список Желаний',
-  downloadText: 'Присоединяйтесь к списку желаний Steam и скачивайте из App Store, когда будет доступно.',
+  downloadText: 'Присоединяйтесь к списку желаний Steam и скачивайте из App Store сейчас.',
   newsletterText: 'Получайте обновления по email при выпуске важных обновлений.',
   emailPlaceholder: 'вашеимя@email.com',
   emailLabel: 'Ваш email',
