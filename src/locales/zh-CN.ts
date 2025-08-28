@@ -115,5 +115,6 @@ export const zhCN: LocalizationData = {
   gallery: '图片画廊',
   trailer: '游戏预告片',
   brand: '品牌',
-  imageViewer: '图片查看器'
+  imageViewer: '图片查看器',
+  backToHome: '返回首页'
 };
