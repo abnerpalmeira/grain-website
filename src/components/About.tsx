@@ -15,10 +15,20 @@ export const About: React.FC = () => {
         <div className="card">
           <div className="gallery" aria-label={t('gallery')}>
             {localeData.galleryImages.map((image, index) => (
-              <a key={index} href={image.src} className="glink">
+              <a 
+                key={index} 
+                href={image.src} 
+                className="glink"
+                data-caption={t(image.alt as any)}
+                title={t(image.alt as any)}
+                aria-label={`${t(image.alt as any)} - Clique para ampliar`}
+              >
+                <div className="screenshot-number">{index + 1}</div>
+                <div className="magnifier">🔍</div>
                 <img 
                   src={image.src} 
                   alt={t(image.alt as any)} 
+                  loading="lazy"
                 />
               </a>
             ))}
