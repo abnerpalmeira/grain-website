@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocalization } from '@/contexts/LocalizationContext';
+import logo64 from '@/assets/logo-64.png';
 
 export const Footer: React.FC = () => {
   const { t } = useLocalization();
@@ -10,7 +11,7 @@ export const Footer: React.FC = () => {
         <div className="brand" aria-label={t('brand')}>
           <img 
             className="brand-logo" 
-            src="/src/assets/logo-64.png" 
+            src={logo64} 
             alt={t('brandLogoAlt')} 
           />
           <span className="brand-title">{t('brandTitle')}</span>

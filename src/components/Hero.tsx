@@ -1,21 +1,17 @@
 import React from 'react';
 import { useLocalization } from '@/contexts/LocalizationContext';
+import heroBanner from '@/assets/hero_banner.png';
 
 export const Hero: React.FC = () => {
   const { t } = useLocalization();
 
   return (
     <section id="home" className="hero" aria-label={t('hero')}>
-      <video 
-        autoPlay 
-        muted 
-        loop 
-        playsInline 
-        poster="/src/assets/hero_banner.png" 
-        aria-label="Gameplay do Grain em loop"
-      >
-        <source src="/src/assets/hero.mp4" type="video/mp4" />
-      </video>
+      <div 
+        className="hero-background" 
+        style={{ backgroundImage: `url(${heroBanner})` }}
+        aria-label="Gameplay do Grain"
+      />
       <div className="overlay">
         <div className="container">
           <h1>{t('heroTitle')}</h1>

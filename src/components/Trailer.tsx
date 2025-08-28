@@ -1,5 +1,8 @@
 import React from 'react';
 import { useLocalization } from '@/contexts/LocalizationContext';
+import appStore from '@/assets/app-store.png';
+import googlePlay from '@/assets/google-play.png';
+import steam from '@/assets/steam.png';
 
 export const Trailer: React.FC = () => {
   const { t } = useLocalization();
@@ -26,7 +29,7 @@ export const Trailer: React.FC = () => {
           <div className="store-badges" style={{ marginTop: '10px' }}>
             <a href="https://apps.apple.com/us/app/grain-pixel/id6751121773" aria-label="Baixar na App Store">
               <img 
-                src="/src/assets/app-store.png" 
+                src={appStore} 
                 alt="Baixar na App Store" 
                 width="180" 
                 height="54" 
@@ -35,7 +38,7 @@ export const Trailer: React.FC = () => {
             </a>
             <a href="#" className="coming-soon" aria-label="Baixar no Google Play">
               <img 
-                src="/src/assets/google-play.png" 
+                src={googlePlay} 
                 alt="Baixar no Google Play" 
                 width="180" 
                 height="54" 
@@ -44,7 +47,7 @@ export const Trailer: React.FC = () => {
             </a>
             <a href="#steam" className="soon" aria-label="Adicionar à wishlist no Steam">
               <img 
-                src="/src/assets/steam.png" 
+                src={steam} 
                 alt="Wishlist no Steam" 
                 width="180" 
                 height="54" 

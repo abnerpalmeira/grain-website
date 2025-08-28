@@ -1,6 +1,10 @@
 import React from 'react';
 import { useLocalization } from '@/contexts/LocalizationContext';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import logo128 from '@/assets/logo-128.png';
+import appStore from '@/assets/app-store.png';
+import googlePlay from '@/assets/google-play.png';
+import steam from '@/assets/steam.png';
 
 export const Header: React.FC = () => {
   const { t } = useLocalization();
@@ -11,7 +15,7 @@ export const Header: React.FC = () => {
         <a className="brand" href="#home">
           <img 
             className="brand-logo" 
-            src="/src/assets/logo-128.png" 
+            src={logo128} 
             alt={t('brandLogoAlt')} 
           />
           <span className="brand-title">{t('brandTitle')}</span>
@@ -20,7 +24,7 @@ export const Header: React.FC = () => {
         <div className="store-badges" aria-label={t('stores')}>
           <a href="https://apps.apple.com/us/app/grain-pixel/id6751121773" aria-label={t('appStoreAlt')}>
             <img 
-              src="/src/assets/app-store.png" 
+              src={appStore} 
               alt={t('appStoreAlt')} 
               width="180" 
               height="54" 
@@ -29,7 +33,7 @@ export const Header: React.FC = () => {
           </a>
           <a href="#download" className="coming-soon" aria-label={t('googlePlayAlt')}>
             <img 
-              src="/src/assets/google-play.png" 
+              src={googlePlay} 
               alt={t('googlePlayAlt')} 
               width="180" 
               height="54" 
@@ -38,7 +42,7 @@ export const Header: React.FC = () => {
           </a>
           <a href="#steam" className="soon" aria-label={t('steamAlt')}>
             <img 
-              src="/src/assets/steam.png" 
+              src={steam} 
               alt={t('steamAlt')} 
               width="180" 
               height="54" 
