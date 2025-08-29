@@ -25,15 +25,58 @@ interface LocalizationProviderProps {
   children: ReactNode;
 }
 
+// Function to detect user's preferred locale
+const detectUserLocale = (): LocaleCode => {
+  // Check if user has a saved preference
+  const savedLocale = localStorage.getItem('grain-locale') as LocaleCode;
+  if (savedLocale && supportedLocales.includes(savedLocale)) {
+    return savedLocale;
+  }
+
+  // Try to detect from browser language
+  if (typeof navigator !== 'undefined' && navigator.language) {
+    const browserLang = navigator.language;
+    
+    // Direct match
+    if (supportedLocales.includes(browserLang as LocaleCode)) {
+      return browserLang as LocaleCode;
+    }
+    
+    // Try to find a close match (e.g., 'ja' for 'ja-JP')
+    const langCode = browserLang.split('-')[0];
+    
+    const closeMatch = supportedLocales.find(locale => 
+      locale.startsWith(langCode) || locale === langCode
+    );
+    
+    if (closeMatch) {
+      return closeMatch;
+    }
+    
+    // Try to find by region (e.g., 'pt-BR' for 'pt')
+    const regionCode = browserLang.split('-')[1]?.toUpperCase();
+    
+    if (regionCode) {
+      const regionMatch = supportedLocales.find(locale => 
+        locale.includes(regionCode)
+      );
+      
+      if (regionMatch) {
+        return regionMatch;
+      }
+    }
+  }
+
+  return defaultLocale;
+};
+
 export const LocalizationProvider: React.FC<LocalizationProviderProps> = ({ children }) => {
-  const [currentLocale, setCurrentLocale] = useState<LocaleCode>(defaultLocale);
+  const [currentLocale, setCurrentLocale] = useState<LocaleCode>(() => detectUserLocale());
 
   useEffect(() => {
-    // Load saved locale from localStorage
-    const savedLocale = localStorage.getItem('grain-locale') as LocaleCode;
-    if (savedLocale && supportedLocales.includes(savedLocale)) {
-      setCurrentLocale(savedLocale);
-    }
+    // Load saved locale from localStorage or detect from browser
+    const detectedLocale = detectUserLocale();
+    setCurrentLocale(detectedLocale);
   }, []);
 
   useEffect(() => {
@@ -56,6 +99,8 @@ export const LocalizationProvider: React.FC<LocalizationProviderProps> = ({ chil
       setCurrentLocale(locale);
     }
   };
+
+
 
   const t = (key: keyof LocalizationData): string => {
     const value = locales[currentLocale][key];
