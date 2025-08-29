@@ -9,7 +9,7 @@ As imagens quebradas foram **completamente corrigidas**! O problema era o uso de
 3. **Screenshots** - Corrigidos para **TODOS os idiomas** usando pasta `public/`
 4. **CSS** - Atualizado para suportar background images
 5. **TypeScript** - Adicionadas declarações para arquivos de imagem
-6. **Client-side Routing** - Adicionado `_redirects` para páginas Privacy Policy e Contact
+6. **Client-side Routing** - Configurado `vercel.json` e `BrowserRouter` para roteamento correto
 
 ## 🚀 Deploy no Vercel (20 minutos)
 
@@ -58,8 +58,9 @@ Após configurado, cada push para `main` fará deploy automático!
   - `it.ts`, `ja.ts`, `ko.ts`, `pl.ts`, `ru.ts`, `zh-CN.ts`
 - `vite.config.ts` - Configuração de assets e routing
 - `src/vite-env.d.ts` - Declarações TypeScript para assets
+- `src/main.tsx` - BrowserRouter com basename configurado
 - `public/screenshots/` - Pasta com todos os screenshots
-- `public/_redirects` - Configuração para client-side routing
+- `vercel.json` - Configuração Vercel para client-side routing
 
 ## 🌍 Idiomas com screenshots funcionando:
 - 🇧🇷 **Português** - ✅
