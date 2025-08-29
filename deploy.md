@@ -10,7 +10,7 @@ As imagens quebradas foram **completamente corrigidas**! O problema era o uso de
 4. **CSS** - Atualizado para suportar background images
 5. **TypeScript** - Adicionadas declarações para arquivos de imagem
 6. **Client-side Routing** - Configurado `vercel.json` e `BrowserRouter` para roteamento correto
-7. **Mobile Responsive** - Header e Footer otimizados para mobile com layout melhorado
+7. **Mobile Responsive** - Footer otimizado para mobile com layout melhorado
 
 ## 🚀 Deploy no Vercel (20 minutos)
 
@@ -65,9 +65,9 @@ Após configurado, cada push para `main` fará deploy automático!
 - `vercel.json` - Configuração Vercel para client-side routing
 
 ## 📱 Mobile Improvements:
-- **Header**: Layout vertical em mobile, store badges centralizados
 - **Footer**: Links em coluna com botões estilizados, melhor espaçamento
-- **Responsive**: Breakpoints em 768px e 480px para diferentes tamanhos de tela
+- **Header**: Mantido layout horizontal original (não alterado)
+- **Responsive**: Breakpoints em 768px e 480px para footer
 
 ## 🌍 Idiomas com screenshots funcionando:
 - 🇧🇷 **Português** - ✅
