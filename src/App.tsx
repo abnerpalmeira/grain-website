@@ -28,7 +28,7 @@ const App: React.FC = () => {
             </main>
           } />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-info" element={<Contact />} />
         </Routes>
         <Footer />
         <Lightbox />

@@ -4,11 +4,12 @@
 As imagens quebradas foram **completamente corrigidas**! O problema era o uso de caminhos absolutos `/src/assets/...` que não funcionam em produção.
 
 ## 🔧 O que foi corrigido:
-1. **Vite config** - Adicionado `base: './'` e configurações de assets
+1. **Vite config** - Adicionado `base: '/'` e configurações de assets
 2. **Componentes** - Todas as imagens agora são importadas como módulos
 3. **Screenshots** - Corrigidos para **TODOS os idiomas** usando pasta `public/`
 4. **CSS** - Atualizado para suportar background images
 5. **TypeScript** - Adicionadas declarações para arquivos de imagem
+6. **Client-side Routing** - Adicionado `_redirects` para páginas Privacy Policy e Contact
 
 ## 🚀 Deploy no Vercel (20 minutos)
 
@@ -42,6 +43,7 @@ npm run build
 - ✅ Hash names para cache busting
 - ✅ Caminhos relativos em produção
 - ✅ TypeScript declarations para assets
+- ✅ Client-side routing funcionando para todas as páginas
 
 ## 🔄 Deploy automático:
 Após configurado, cada push para `main` fará deploy automático!
@@ -54,9 +56,10 @@ Após configurado, cada push para `main` fará deploy automático!
 - **Todos os arquivos de idioma** - Screenshots corrigidos:
   - `pt-BR.ts`, `en-US.ts`, `es.ts`, `fr.ts`, `de.ts`
   - `it.ts`, `ja.ts`, `ko.ts`, `pl.ts`, `ru.ts`, `zh-CN.ts`
-- `vite.config.ts` - Configuração de assets
+- `vite.config.ts` - Configuração de assets e routing
 - `src/vite-env.d.ts` - Declarações TypeScript para assets
 - `public/screenshots/` - Pasta com todos os screenshots
+- `public/_redirects` - Configuração para client-side routing
 
 ## 🌍 Idiomas com screenshots funcionando:
 - 🇧🇷 **Português** - ✅
@@ -71,9 +74,15 @@ Após configurado, cada push para `main` fará deploy automático!
 - 🇷🇺 **Russo** - ✅
 - 🇨🇳 **Chinês** - ✅
 
+## 📄 Páginas funcionando:
+- 🏠 **Home** - ✅
+- 🔒 **Privacy Policy** - ✅ (routing corrigido)
+- 📧 **Contact** - ✅ (routing corrigido para `/contact-info`)
+
 ---
 **Status**: ✅ Pronto para deploy
 **Build**: ✅ Funcionando
 **Assets**: ✅ Corrigidos
 **Screenshots**: ✅ Corrigidos para TODOS os idiomas
+**Routing**: ✅ Corrigido para todas as páginas
 **Deploy**: ✅ Pronto para Vercel
