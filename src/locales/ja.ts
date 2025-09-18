@@ -9,6 +9,7 @@ export const ja: LocalizationData = {
   brandTitle: 'Grain Pixel',
   brandLogoAlt: 'Grain Pixelロゴ',
   appStoreAlt: 'App Storeでダウンロード',
+  appStoreLiteAlt: 'Grain Pixel Lite - App Storeで無料',
   googlePlayAlt: 'Google Playで入手',
   steamAlt: 'Steamウィッシュリストに追加',
   wishlist: 'ウィッシュリスト',

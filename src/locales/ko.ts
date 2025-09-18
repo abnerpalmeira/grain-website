@@ -9,6 +9,7 @@ export const ko: LocalizationData = {
   brandTitle: 'Grain Pixel',
   brandLogoAlt: 'Grain Pixel 로고',
   appStoreAlt: 'App Store에서 다운로드',
+  appStoreLiteAlt: 'Grain Pixel Lite - App Store에서 무료',
   googlePlayAlt: 'Google Play에서 구하기',
   steamAlt: 'Steam 위시리스트에 추가',
   wishlist: '위시리스트',

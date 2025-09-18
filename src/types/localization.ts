@@ -14,6 +14,7 @@ export interface LocalizationData {
   brandTitle: string;
   brandLogoAlt: string;
   appStoreAlt: string;
+  appStoreLiteAlt: string;
   googlePlayAlt: string;
   steamAlt: string;
   wishlist: string;

@@ -9,6 +9,7 @@ export const zhCN: LocalizationData = {
   brandTitle: 'Grain Pixel',
   brandLogoAlt: 'Grain Pixel标志',
   appStoreAlt: '在App Store下载',
+  appStoreLiteAlt: 'Grain Pixel Lite - App Store免费',
   googlePlayAlt: '在Google Play获取',
   steamAlt: '添加到Steam愿望单',
   wishlist: '愿望单',

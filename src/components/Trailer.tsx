@@ -35,6 +35,32 @@ export const Trailer: React.FC = () => {
                 loading="lazy"
               />
             </a>
+            <div className="app-store-lite-container" style={{ position: 'relative', display: 'inline-block' }}>
+              <a href="https://apps.apple.com/us/app/grain-pixel-lite/id6751788656" aria-label="Baixar Grain Pixel Lite na App Store">
+                <img 
+                  src={appStore} 
+                  alt="Baixar Grain Pixel Lite na App Store" 
+                  width="180" 
+                  height="54" 
+                  loading="lazy"
+                />
+              </a>
+              <div className="free-tooltip" style={{
+                position: 'absolute',
+                top: '-8px',
+                right: '-8px',
+                backgroundColor: '#ff4444',
+                color: 'white',
+                padding: '4px 8px',
+                borderRadius: '4px',
+                fontSize: '12px',
+                fontWeight: 'bold',
+                zIndex: 10,
+                boxShadow: '0 2px 4px rgba(0,0,0,0.3)'
+              }}>
+                FREE
+              </div>
+            </div>
             <a href="https://play.google.com/store/apps/details?id=com.ashub.grainpixel" aria-label="Baixar no Google Play">
               <img 
                 src={googlePlay} 

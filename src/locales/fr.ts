@@ -9,6 +9,7 @@ export const fr: LocalizationData = {
   brandTitle: 'Grain Pixel',
   brandLogoAlt: 'Logo Grain Pixel',
   appStoreAlt: 'Disponible sur l\'App Store',
+  appStoreLiteAlt: 'Grain Pixel Lite - Gratuit sur l\'App Store',
   googlePlayAlt: 'Disponible sur Google Play',
   steamAlt: 'Ajouter à la liste de souhaits Steam',
   wishlist: 'Liste de souhaits',
