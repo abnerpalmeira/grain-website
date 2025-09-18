@@ -22,7 +22,7 @@ export const ru: LocalizationData = {
   // About section
   aboutTitle: 'О Игре',
   aboutText: 'Grain Pixel сочетает забавную физику с ретро-эстетикой. Смешивайте <strong>огонь</strong>, <strong>воду</strong>, <strong>песок</strong>, <strong>лед</strong>, <strong>пар</strong> и десятки других элементов, чтобы увидеть, как мир реагирует в реальном времени. Создавайте сценарии, зажигайте динамит, замораживайте водопады и открывайте возникающие взаимодействия. Просто играть, глубоко осваивать.',
-  aboutAvailability: 'Доступно для <strong>iOS</strong> с версией <strong>PC</strong> в разработке.',
+  aboutAvailability: 'Доступно для <strong>iOS</strong> и <strong>Android</strong>.',
   
   // Gallery
   screenshot1: 'Скриншот 1: пустыня с пирамидой',
@@ -59,8 +59,8 @@ export const ru: LocalizationData = {
   
   // Trailer section
   trailerTitle: 'Трейлер',
-  downloadTitle: 'Скачать / Список Желаний',
-  downloadText: 'Присоединяйтесь к списку желаний Steam и скачивайте из App Store сейчас.',
+  downloadTitle: 'Скачать',
+  downloadText: 'Скачивайте сейчас из App Store и Google Play.',
   newsletterText: 'Получайте обновления по email при выпуске важных обновлений.',
   emailPlaceholder: 'вашеимя@email.com',
   emailLabel: 'Ваш email',

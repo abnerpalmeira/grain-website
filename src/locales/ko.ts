@@ -22,7 +22,7 @@ export const ko: LocalizationData = {
   // About section
   aboutTitle: '게임 소개',
   aboutText: 'Grain Pixel은 재미있는 물리와 레트로한 미학을 결합합니다. <strong>불</strong>, <strong>물</strong>, <strong>모래</strong>, <strong>얼음</strong>, <strong>증기</strong> 등 수십 개의 요소를 섞어서 세계가 실시간으로 반응하는 것을 보세요. 시나리오를 만들고, 다이너마이트에 불을 붙이고, 폭포를 얼리고, 새로운 상호작용을 발견하세요. 플레이하기는 간단하지만, 마스터하기는 깊이 있습니다.',
-  aboutAvailability: '<strong>iOS</strong>에서 이용 가능, <strong>PC</strong> 버전 개발 중.',
+  aboutAvailability: '<strong>iOS</strong>와 <strong>Android</strong>에서 이용 가능.',
   
   // Gallery
   screenshot1: '스크린샷 1: 피라미드가 있는 사막',
@@ -59,8 +59,8 @@ export const ko: LocalizationData = {
   
   // Trailer section
   trailerTitle: '트레일러',
-  downloadTitle: '다운로드 / 위시리스트',
-  downloadText: 'Steam 위시리스트에 참여하고, 지금 App Store에서 다운로드.',
+  downloadTitle: '다운로드',
+  downloadText: '지금 App Store와 Google Play에서 다운로드.',
   newsletterText: '주요 업데이트가 출시되면 이메일로 알려드립니다.',
   emailPlaceholder: '당신의이름@email.com',
   emailLabel: '당신의 이메일',

@@ -6,7 +6,6 @@ import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
 import { Features } from '@/components/Features';
 import { Trailer } from '@/components/Trailer';
-import { Roadmap } from '@/components/Roadmap';
 import { Footer } from '@/components/Footer';
 import { Lightbox } from '@/components/Lightbox';
 import { PrivacyPolicy } from '@/components/PrivacyPolicy';
@@ -24,7 +23,6 @@ const App: React.FC = () => {
               <About />
               <Features />
               <Trailer />
-              <Roadmap />
             </main>
           } />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

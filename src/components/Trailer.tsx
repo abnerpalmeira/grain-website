@@ -2,7 +2,6 @@ import React from 'react';
 import { useLocalization } from '@/contexts/LocalizationContext';
 import appStore from '@/assets/app-store.png';
 import googlePlay from '@/assets/google-play.png';
-import steam from '@/assets/steam.png';
 
 export const Trailer: React.FC = () => {
   const { t } = useLocalization();
@@ -14,7 +13,7 @@ export const Trailer: React.FC = () => {
           <h2 className="section-title">{t('trailerTitle')}</h2>
           <div className="trailer" role="region" aria-label={t('trailer')}>
             <iframe 
-              src="https://www.youtube.com/embed/dQw4wWgXcQ" 
+              src="https://www.youtube.com/embed/m8WZBYrEbfk" 
               title="Trailer do Grain Pixel" 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -36,19 +35,10 @@ export const Trailer: React.FC = () => {
                 loading="lazy"
               />
             </a>
-            <a href="#" className="coming-soon" aria-label="Baixar no Google Play">
+            <a href="https://play.google.com/store/apps/details?id=com.ashub.grainpixel" aria-label="Baixar no Google Play">
               <img 
                 src={googlePlay} 
                 alt="Baixar no Google Play" 
-                width="180" 
-                height="54" 
-                loading="lazy"
-              />
-            </a>
-            <a href="#steam" className="soon" aria-label="Adicionar à wishlist no Steam">
-              <img 
-                src={steam} 
-                alt="Wishlist no Steam" 
                 width="180" 
                 height="54" 
                 loading="lazy"

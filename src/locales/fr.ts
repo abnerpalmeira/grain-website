@@ -22,7 +22,7 @@ export const fr: LocalizationData = {
   // About section
   aboutTitle: 'À propos du jeu',
   aboutText: 'Grain Pixel combine une physique amusante avec une esthétique rétro. Mélangez <strong>feu</strong>, <strong>eau</strong>, <strong>sable</strong>, <strong>glace</strong>, <strong>vapeur</strong> et des dizaines d\'éléments pour voir le monde réagir en temps réel. Créez des scénarios, allumez des dynamites, congelez des cascades et découvrez des interactions émergentes. Simple à jouer, profond à maîtriser.',
-  aboutAvailability: 'Disponible pour <strong>iOS</strong> avec version <strong>PC</strong> en développement.',
+  aboutAvailability: 'Disponible pour <strong>iOS</strong> et <strong>Android</strong>.',
   
   // Gallery
   screenshot1: 'Capture d\'écran 1: désert avec pyramide',
@@ -59,8 +59,8 @@ export const fr: LocalizationData = {
   
   // Trailer section
   trailerTitle: 'Bande-annonce',
-  downloadTitle: 'Télécharger / Liste de souhaits',
-  downloadText: 'Rejoignez la liste de souhaits Steam et téléchargez depuis l\'App Store maintenant.',
+  downloadTitle: 'Télécharger',
+  downloadText: 'Téléchargez maintenant depuis App Store et Google Play.',
   newsletterText: 'Recevez des mises à jour par e-mail lors de mises à jour majeures.',
   emailPlaceholder: 'votrenom@email.com',
   emailLabel: 'Votre e-mail',

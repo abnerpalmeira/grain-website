@@ -22,7 +22,7 @@ export const zhCN: LocalizationData = {
   // About section
   aboutTitle: '关于游戏',
   aboutText: 'Grain Pixel将有趣的物理与复古美学相结合。混合<strong>火</strong>、<strong>水</strong>、<strong>沙子</strong>、<strong>冰</strong>、<strong>蒸汽</strong>等数十种元素，观看世界实时反应。创建场景，点燃炸药，冻结瀑布，发现涌现的互动。简单易玩，深度掌握。',
-  aboutAvailability: '适用于<strong>iOS</strong>，<strong>PC</strong>版本开发中。',
+  aboutAvailability: '适用于<strong>iOS</strong>和<strong>Android</strong>。',
   
   // Gallery
   screenshot1: '截图1：有金字塔的沙漠',
@@ -59,8 +59,8 @@ export const zhCN: LocalizationData = {
   
   // Trailer section
   trailerTitle: '预告片',
-  downloadTitle: '下载 / 愿望单',
-  downloadText: '加入Steam愿望单，现在就在App Store下载。',
+  downloadTitle: '下载',
+  downloadText: '现在就在App Store和Google Play下载。',
   newsletterText: '重大更新发布时通过电子邮件获取更新。',
   emailPlaceholder: '你的名字@email.com',
   emailLabel: '你的邮箱',

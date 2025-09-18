@@ -22,7 +22,7 @@ export const ja: LocalizationData = {
   // About section
   aboutTitle: 'ゲームについて',
   aboutText: 'Grain Pixelは楽しい物理とレトロな美学を組み合わせています。<strong>火</strong>、<strong>水</strong>、<strong>砂</strong>、<strong>氷</strong>、<strong>蒸気</strong>など数十の要素を混ぜて、世界がリアルタイムで反応するのを見てください。シナリオを作成し、ダイナマイトに火をつけ、滝を凍らせ、新たな相互作用を発見しましょう。遊ぶのは簡単、マスターするのは奥深い。',
-  aboutAvailability: '<strong>iOS</strong>で利用可能、<strong>PC</strong>版開発中。',
+  aboutAvailability: '<strong>iOS</strong>と<strong>Android</strong>で利用可能。',
   
   // Gallery
   screenshot1: 'スクリーンショット1: ピラミッドのある砂漠',
@@ -59,8 +59,8 @@ export const ja: LocalizationData = {
   
   // Trailer section
   trailerTitle: 'トレーラー',
-  downloadTitle: 'ダウンロード / ウィッシュリスト',
-  downloadText: 'Steamウィッシュリストに参加し、今すぐApp Storeからダウンロード。',
+  downloadTitle: 'ダウンロード',
+  downloadText: '今すぐApp StoreとGoogle Playからダウンロード。',
   newsletterText: '重要なアップデートがリリースされたらメールでお知らせ。',
   emailPlaceholder: 'あなたの名前@email.com',
   emailLabel: 'あなたのメール',
